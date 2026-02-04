@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm run build:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: NARDIHA Portfolio Landing Page\n\n- Next.js 15 + TypeScript + Tailwind CSS\n- 11 section components with Framer Motion animations\n- $375M-$425M portfolio valuation display\n- 19 SaaS platforms across 4 verticals\n- Responsive dark theme with lime accents\n- Animated counters and scroll-triggered reveals\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd GitHub Pages deployment workflow\n\n- Configure next.config.ts for static export with basePath\n- Add GitHub Actions workflow for automatic deployment\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "WebFetch(domain:zen.site)",
+      "Bash(npx prisma generate:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(if exist node_modules rmdir /s /q node_modules)",
+      "Bash(if exist .next rmdir /s /q .next)",
+      "Bash(if exist package-lock.json del package-lock.json)",
+      "Bash(npm run dev:*)",
+      "Bash(cmd.exe /c \"taskkill /PID 18692 /F\")",
+      "Bash(powershell -Command \"Stop-Process -Id 18692 -Force\")",
+      "Bash(xargs -I {} sh -c 'echo \"\"=== {} ===\"\" && grep -n \"\"import.*bankDetails\\\\|import.*paymentInstructions\"\" {}')",
+      "Bash(tasklist:*)"
+    ]
+  }
+}

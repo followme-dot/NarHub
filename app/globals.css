@@ -1,0 +1,346 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   NARHUB - Global Styles
+   Premium Light Theme - Enterprise SaaS
+   ======================================== */
+
+@layer base {
+  :root {
+    /* Backgrounds - Blanco Perla */
+    --bg-primary: #ffffff;
+    --bg-secondary: #fcfcfd;
+    --bg-tertiary: #f8f9fa;
+
+    /* Brand Colors */
+    --brand-primary: #0066ff;
+    --brand-primary-dark: #0052cc;
+    --brand-secondary: #7c3aed;
+    --brand-accent: #06b6d4;
+
+    /* Text Colors - ALTA LEGIBILIDAD */
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a68;
+    --text-muted: #71717a;
+
+    /* Status Colors */
+    --success: #059669;
+    --warning: #d97706;
+    --error: #dc2626;
+
+    /* Card & Surface */
+    --card-bg: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.06);
+    --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    --card-shadow-hover: 0 24px 64px rgba(0, 0, 0, 0.1);
+
+    /* Glass Effect Premium */
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #0066ff 0%, #7c3aed 100%);
+    --gradient-card: linear-gradient(160deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.9) 100%);
+
+    /* Legacy support */
+    --narhub-primary: #0066ff;
+    --narhub-secondary: #7c3aed;
+    --narhub-border: rgba(0, 0, 0, 0.06);
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-inter), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(0, 102, 255, 0.15);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  /* ========================================
+     TYPOGRAPHY - LEGIBILIDAD
+     ======================================== */
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ========================================
+     BUTTONS
+     ======================================== */
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4;
+    @apply font-semibold text-base rounded-2xl;
+    @apply transition-all duration-300;
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 102, 255, 0.4);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4;
+    @apply font-semibold text-base rounded-2xl;
+    @apply transition-all duration-300;
+    background: white;
+    color: var(--text-primary);
+    border: 2px solid var(--card-border);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+    background: rgba(0, 102, 255, 0.04);
+  }
+
+  /* ========================================
+     PREMIUM GLASS CARDS
+     ======================================== */
+
+  .card-glass {
+    @apply relative rounded-3xl overflow-hidden;
+    background: var(--glass-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-glass:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 102, 255, 0.15);
+  }
+
+  .card-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
+  }
+
+  /* Card estándar */
+  .card {
+    @apply relative rounded-2xl;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    transition: all 0.4s ease;
+  }
+
+  .card:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  /* ========================================
+     BADGES - COLORES LEGIBLES
+     ======================================== */
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1.5;
+    @apply text-xs font-bold rounded-lg uppercase tracking-wide;
+  }
+
+  .badge-primary {
+    background: rgba(0, 102, 255, 0.1);
+    color: #0052cc;
+  }
+
+  .badge-success {
+    background: rgba(5, 150, 105, 0.1);
+    color: #047857;
+  }
+
+  .badge-purple {
+    background: rgba(124, 58, 237, 0.1);
+    color: #6d28d9;
+  }
+
+  .badge-warning {
+    background: rgba(217, 119, 6, 0.1);
+    color: #b45309;
+  }
+
+  /* ========================================
+     INPUTS
+     ======================================== */
+
+  .input {
+    @apply w-full px-4 py-3.5;
+    @apply rounded-xl placeholder-gray-400;
+    @apply transition-all duration-300;
+    background: white;
+    color: var(--text-primary);
+    border: 2px solid var(--card-border);
+  }
+
+  .input:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
+  }
+
+  /* ========================================
+     SECTIONS
+     ======================================== */
+
+  .section-padding {
+    @apply py-24 md:py-32 px-6;
+  }
+
+  .section-header {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold;
+    @apply text-center mb-4;
+    color: var(--text-primary);
+  }
+
+  .section-subheader {
+    @apply text-lg md:text-xl text-center max-w-2xl mx-auto leading-relaxed;
+    color: var(--text-secondary);
+  }
+
+  /* ========================================
+     LOADING SCREEN
+     ======================================== */
+
+  .loading-screen {
+    @apply fixed inset-0 z-50 flex flex-col items-center justify-center;
+    background: white;
+  }
+
+  .loading-logo {
+    @apply text-5xl md:text-7xl font-display font-bold;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .loading-bar-container {
+    @apply w-64 h-1.5 rounded-full overflow-hidden mt-8;
+    background: var(--bg-tertiary);
+  }
+
+  .loading-bar {
+    @apply h-full rounded-full;
+    background: var(--gradient-primary);
+    animation: loading-bar 10s ease-in-out forwards;
+  }
+
+  @keyframes loading-bar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+
+  /* ========================================
+     NAVIGATION
+     ======================================== */
+
+  .nav-link {
+    @apply relative px-4 py-2 text-sm font-medium rounded-xl;
+    @apply transition-all duration-200;
+    color: var(--text-secondary);
+  }
+
+  .nav-link:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+  }
+}
+
+@layer utilities {
+  /* Grain disabled */
+  .grain-overlay {
+    display: none;
+  }
+
+  /* Subtle grid */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  /* Hero gradient */
+  .bg-hero-gradient {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 102, 255, 0.05), transparent 50%),
+      radial-gradient(ellipse 60% 40% at 80% 50%, rgba(124, 58, 237, 0.03), transparent 50%);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4d4d8;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a1a1aa;
+  }
+
+  /* Animations */
+  .animate-in {
+    animation: fade-in-up 0.6s ease forwards;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Utilities */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
