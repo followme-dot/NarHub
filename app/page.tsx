@@ -61,7 +61,7 @@ export default function HomePage() {
                 className="text-center mb-12"
               >
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-[#1a1a2e]">
-                  Four Verticals. 19 Platforms.
+                  Five Verticals. 36 Platforms.
                   <br />
                   <span className="text-gradient">Infinite Scale Potential.</span>
                 </h2>

@@ -12,7 +12,7 @@ const values = [
   {
     icon: Code,
     title: 'Code Excellence',
-    description: 'Over 400,000 lines of clean, documented, maintainable code. Zero technical debt. Built to scale.',
+    description: 'Over 750,000 lines of clean, documented, maintainable code. Zero technical debt. Built to scale.',
   },
   {
     icon: Zap,
@@ -27,10 +27,10 @@ const values = [
 ]
 
 const stats = [
-  { value: '19', label: 'Enterprise Platforms' },
-  { value: '$375M+', label: 'Total Valuation' },
-  { value: '400K+', label: 'Lines of Code' },
-  { value: '7-8', label: 'Weeks to Deploy' },
+  { value: '36', label: 'Enterprise Platforms' },
+  { value: '$8M+', label: 'Development Investment' },
+  { value: '750K+', label: 'Lines of Code' },
+  { value: '5-8', label: 'Weeks to Deploy' },
 ]
 
 const locations = [
