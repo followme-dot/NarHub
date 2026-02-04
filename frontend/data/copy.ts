@@ -1069,13 +1069,13 @@ export const products = [
 
 export const stats = [
   { value: "750K+", label: "Lines of Code", context: "2 years of development" },
-  { value: "$8M+", label: "Development Investment", context: "What we invested building this" },
+  { value: "$49M+", label: "Portfolio Value", context: "Total catalog valuation" },
   { value: "5-8", label: "Weeks to Deploy", context: "With your DevOps + Backend team" },
   { value: "30", label: "Days Support", context: "Integration support included" },
   { value: "2", label: "Years R&D", context: "Intensive development" },
   { value: "36", label: "Platforms", context: "Complete ecosystem" },
   { value: "20+", label: "Blockchains", context: "Multi-chain architecture" },
-  { value: "$120K-$8M", label: "Price Range", context: "Based on complexity" }
+  { value: "$120K-$5M", label: "Price Range", context: "Based on complexity" }
 ]
 
 export const usps = [

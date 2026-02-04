@@ -17,7 +17,7 @@ const values = [
   {
     icon: Zap,
     title: 'Rapid Deployment',
-    description: 'From purchase to production in 7-8 weeks. Our deployment pipeline is battle-tested and proven.',
+    description: 'From purchase to production in 5-8 weeks. Our deployment pipeline is battle-tested and proven.',
   },
   {
     icon: Users,
@@ -28,7 +28,7 @@ const values = [
 
 const stats = [
   { value: '36', label: 'Enterprise Platforms' },
-  { value: '$8M+', label: 'Development Investment' },
+  { value: '$49M+', label: 'Portfolio Value' },
   { value: '750K+', label: 'Lines of Code' },
   { value: '5-8', label: 'Weeks to Deploy' },
 ]

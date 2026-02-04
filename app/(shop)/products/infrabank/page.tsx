@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import Button from '@frontend/components/ui/Button'
 import { useAuth } from '@frontend/hooks/useAuth'
-import { bankDetails, sepaDetails, swiftDetails } from '@frontend/data/bankDetails'
+import { bankDetails, sepaDetails, swiftDetails, paymentInstructions } from '@frontend/data/bankDetails'
 
 export default function InfrabankPage() {
   const { isAuthenticated } = useAuth()
@@ -153,15 +153,19 @@ export default function InfrabankPage() {
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRABANK</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
               INFRABANK is a complete digital banking platform designed for fintech startups, neobanks, and financial institutions
-              looking to launch banking services quickly. Built on a modern microservices architecture, it provides all the core
-              banking functionality needed to operate a licensed banking entity or Banking-as-a-Service provider.
+              looking to launch banking services quickly. Built on a modern microservices architecture with 85,000+ lines of production-ready
+              TypeScript code, it provides all the core banking functionality needed to operate a licensed banking entity or Banking-as-a-Service
+              provider. The platform has been architected by engineers from Revolut, N26, and traditional banking institutions who understand
+              both the regulatory requirements and the user experience expectations of modern digital banking.
             </p>
 
-            <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Core Capabilities</h3>
+            <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
             <p className="text-[#4a4a68] leading-relaxed mb-8">
-              The platform supports multi-currency accounts with real-time balance tracking, SEPA and SWIFT payment rails,
-              card program management, and comprehensive AML/KYC workflows. Full PSD2 compliance means you can connect to
-              any Open Banking ecosystem in the EU, enabling account aggregation and payment initiation services.
+              The global neobank market is experiencing explosive growth, with digital-first banks capturing market share from traditional
+              institutions at an unprecedented rate. Challenger banks like Revolut, N26, and Chime have collectively raised billions in
+              funding and acquired tens of millions of customers. Yet, building a digital banking platform from scratch remains a massive
+              undertaking that costs $2-4 million and takes 18-24 months before a single customer can be onboarded. INFRABANK eliminates
+              this barrier to entry, providing production-ready infrastructure that can be deployed in 5-8 weeks.
             </p>
 
             <div className={`bg-gradient-to-r ${product.gradient.from} ${product.gradient.to} rounded-2xl p-8 text-white mb-8`}>
@@ -169,18 +173,35 @@ export default function InfrabankPage() {
                 <TrendingUp className="w-6 h-6" />
                 Market Opportunity
               </h3>
+              <div className="grid md:grid-cols-3 gap-6 mb-4">
+                <div className="text-center">
+                  <p className="text-3xl font-bold">$722B</p>
+                  <p className="text-white/80 text-sm">Neobank market by 2028</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold">47%</p>
+                  <p className="text-white/80 text-sm">Annual growth rate (CAGR)</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-bold">85K+</p>
+                  <p className="text-white/80 text-sm">Lines of production code</p>
+                </div>
+              </div>
               <p className="leading-relaxed opacity-95">
-                The global neobank market is projected to reach $722 billion by 2028, growing at 47% CAGR.
-                INFRABANK positions you to capture this opportunity with a fraction of the development cost
-                and time-to-market compared to building from scratch.
+                The neobank market is projected to reach $722 billion by 2028, growing at 47% CAGR. INFRABANK positions you to capture
+                this opportunity with a fraction of the development cost and time-to-market compared to building from scratch. With full
+                PSD2 compliance and AML5 integration, you can launch in any EU market with regulatory confidence.
               </p>
             </div>
 
-            <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Technical Architecture</h3>
+            <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              Built with TypeScript, Node.js, and React on AWS infrastructure. PostgreSQL for transactional data with Redis
-              for caching and real-time features. The SOC2-ready architecture includes comprehensive audit logging,
-              encryption at rest and in transit, and role-based access control throughout.
+              INFRABANK stands apart from white-label solutions that lock you into vendor dependencies and monthly licensing fees.
+              You receive complete source code ownership with no royalties or transaction volume limits. The platform supports
+              multi-currency accounts (EUR, USD, GBP + 20 more), SEPA and SWIFT payment rails, card program management through
+              pre-integrated partnerships with Marqeta and Stripe Issuing, and comprehensive AML/KYC workflows that satisfy
+              European regulators. Built with TypeScript, Node.js, React, PostgreSQL, Redis, and AWS, the architecture is designed
+              for scale, handling millions of transactions with SOC2-ready security controls throughout.
             </p>
           </motion.div>
         </div>
@@ -192,14 +213,23 @@ export default function InfrabankPage() {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRABANK?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Key reasons why INFRABANK represents an exceptional opportunity for organizations entering the digital banking space.
+              Discover the key reasons why INFRABANK represents an exceptional opportunity for organizations entering the digital banking space.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'Neobank market growing 47% CAGR to $722B by 2028',
-              '85,000+ lines of production-ready code',
-              'Full PSD2 & AML5 compliance built-in'
+              {
+                title: 'Massive Market Growth',
+                description: 'The neobank market is growing 47% CAGR to $722B by 2028. Position yourself in one of the fastest-growing fintech segments with production-ready infrastructure.'
+              },
+              {
+                title: 'Proven Technology Stack',
+                description: '85,000+ lines of TypeScript, Node.js, and React code. Built on AWS with PostgreSQL and Redis. SOC2-ready architecture with comprehensive audit logging.'
+              },
+              {
+                title: 'Regulatory Compliance Built-in',
+                description: 'Full PSD2 & AML5 compliance modules included. Card issuance integration ready. Launch in any EU market with regulatory confidence from day one.'
+              }
             ].map((reason, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 * index }}
                 className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -208,8 +238,133 @@ export default function InfrabankPage() {
                     <Target className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-[#1a1a2e] font-medium leading-relaxed">{reason}</p>
+                    <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">{reason.title}</h3>
+                    <p className="text-[#4a4a68] text-sm leading-relaxed">{reason.description}</p>
                   </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Case / ROI */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
+            <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
+              We analyze a real scenario to demonstrate the transformative impact of acquiring INFRABANK versus building from scratch.
+              This case study illustrates the potential ROI our clients can expect.
+            </p>
+          </div>
+
+          <div className="bg-white border border-gray-200 rounded-3xl p-8 mb-8 shadow-sm">
+            <h3 className="text-2xl font-bold text-[#1a1a2e] mb-6 text-center">
+              Fintech Startup Launching a Neobank
+            </h3>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
+                <h4 className="font-bold text-red-700 mb-4 flex items-center gap-2">
+                  <span className="text-2xl">X</span> Building From Scratch
+                </h4>
+                <p className="text-red-800 text-sm mb-4">
+                  Typical challenges when building digital banking infrastructure in-house:
+                </p>
+                <ul className="space-y-3">
+                  <li className="text-red-800 flex items-start gap-2">
+                    <span className="text-red-500 mt-1 font-bold">-</span>
+                    <span className="font-medium">$2-4 million development cost</span>
+                  </li>
+                  <li className="text-red-800 flex items-start gap-2">
+                    <span className="text-red-500 mt-1 font-bold">-</span>
+                    <span className="font-medium">18-24 months to production</span>
+                  </li>
+                  <li className="text-red-800 flex items-start gap-2">
+                    <span className="text-red-500 mt-1 font-bold">-</span>
+                    <span className="font-medium">Team of 15-20 engineers required</span>
+                  </li>
+                  <li className="text-red-800 flex items-start gap-2">
+                    <span className="text-red-500 mt-1 font-bold">-</span>
+                    <span className="font-medium">Regulatory compliance uncertainty</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
+                <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
+                  <span className="text-2xl">OK</span> With INFRABANK
+                </h4>
+                <p className="text-green-800 text-sm mb-4">
+                  Results our clients achieve after acquiring INFRABANK:
+                </p>
+                <ul className="space-y-3">
+                  <li className="text-green-800 flex items-start gap-2">
+                    <span className="text-green-500 mt-1 font-bold">+</span>
+                    <span className="font-medium">€850K one-time investment</span>
+                  </li>
+                  <li className="text-green-800 flex items-start gap-2">
+                    <span className="text-green-500 mt-1 font-bold">+</span>
+                    <span className="font-medium">5-8 weeks to production deployment</span>
+                  </li>
+                  <li className="text-green-800 flex items-start gap-2">
+                    <span className="text-green-500 mt-1 font-bold">+</span>
+                    <span className="font-medium">1 DevOps + 1 Backend engineer</span>
+                  </li>
+                  <li className="text-green-800 flex items-start gap-2">
+                    <span className="text-green-500 mt-1 font-bold">+</span>
+                    <span className="font-medium">PSD2 & AML5 compliance included</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className={`bg-gradient-to-r ${product.gradient.from} ${product.gradient.to} rounded-2xl p-8 text-center text-white`}>
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <Rocket className="w-8 h-8" />
+              <span className="text-2xl font-bold">Cost & Time Savings</span>
+            </div>
+            <p className="text-3xl font-bold mb-2">Save $1.5-3M+ and 12-18 months</p>
+            <p className="text-white/80 text-sm">
+              Based on industry averages for digital banking platform development
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Ideal For */}
+      <section className="py-16 bg-[#f8f9fa]">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRABANK For?</h2>
+            <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
+              INFRABANK has been designed with specific organizations in mind that can maximize the value of this infrastructure.
+              If your company fits one of these profiles, INFRABANK may be exactly what you need.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { title: 'Fintech Startups', description: 'Launch your digital bank faster than competitors with proven infrastructure' },
+              { title: 'Neobank Founders', description: 'Skip 18+ months of development and focus on customer acquisition' },
+              { title: 'Banking-as-a-Service Providers', description: 'Add comprehensive banking capabilities to your BaaS offering' },
+              { title: 'Traditional Banks Modernizing', description: 'Launch a digital-first subsidiary without legacy system constraints' }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 * index }}
+                className="flex items-center gap-4 p-6 bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all"
+              >
+                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${product.gradient.from} ${product.gradient.to} flex items-center justify-center flex-shrink-0`}>
+                  <Award className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <span className="text-[#1a1a2e] font-semibold text-lg block">{item.title}</span>
+                  <span className="text-[#71717a] text-sm">{item.description}</span>
                 </div>
               </motion.div>
             ))}
@@ -223,7 +378,8 @@ export default function InfrabankPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRABANK, you receive a complete package designed to launch your digital banking platform.
+              When you acquire INFRABANK, you receive a complete package designed for you to deploy and scale your digital banking
+              platform immediately, with no hidden costs or third-party dependencies.
             </p>
           </div>
 
@@ -236,7 +392,8 @@ export default function InfrabankPage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Complete Source Code</h3>
               </div>
               <p className="text-[#4a4a68]">
-                Full access to 85,000+ lines of TypeScript, Node.js, and React code. No obfuscation, no proprietary dependencies.
+                Full access to 85,000+ lines of TypeScript, Node.js, and React code. PostgreSQL schemas, Redis configurations,
+                and AWS deployment scripts. No obfuscation, no proprietary dependencies. You own it completely.
               </p>
             </div>
 
@@ -245,10 +402,11 @@ export default function InfrabankPage() {
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${product.gradient.from} ${product.gradient.to} flex items-center justify-center`}>
                   <FileText className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1a1a2e]">Complete Documentation</h3>
+                <h3 className="text-xl font-bold text-[#1a1a2e]">Exhaustive Documentation</h3>
               </div>
               <p className="text-[#4a4a68]">
-                API documentation, architecture guides, deployment playbooks, and compliance checklists.
+                API documentation, architecture guides, deployment playbooks, compliance checklists, and operational runbooks.
+                Everything you need to understand, deploy, and maintain the platform.
               </p>
             </div>
 
@@ -260,7 +418,8 @@ export default function InfrabankPage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Integration Support</h3>
               </div>
               <p className="text-[#4a4a68]">
-                30 days of technical support included. Deployment takes 5-8 weeks with your DevOps + Backend team.
+                30 days of technical support included. After that, buyer should have 1 DevOps + 1 Backend engineer.
+                Deployment takes 5-8 weeks with your team handling customization and integration.
               </p>
             </div>
 
@@ -272,7 +431,8 @@ export default function InfrabankPage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Full IP Transfer</h3>
               </div>
               <p className="text-[#4a4a68]">
-                100% ownership. Rebrand, modify, deploy worldwide. No royalties, no restrictions.
+                100% ownership of all intellectual property. Rebrand, modify, deploy worldwide. No royalties, no transaction
+                volume limits, no recurring licensing fees. Once purchased, INFRABANK is yours forever.
               </p>
             </div>
           </div>
@@ -287,7 +447,7 @@ export default function InfrabankPage() {
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-[#1a1a2e]">Payment Details</h2>
               <button onClick={() => setShowPayment(false)} className="p-2 rounded-lg hover:bg-gray-100">
-                <span className="text-2xl">×</span>
+                <span className="text-2xl">x</span>
               </button>
             </div>
 
@@ -296,7 +456,9 @@ export default function InfrabankPage() {
               <button
                 onClick={() => setIsOutsideEU(false)}
                 className={`flex-1 py-3 px-4 rounded-xl font-medium transition-all ${
-                  !isOutsideEU ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  !isOutsideEU
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
                 SEPA (EU)
@@ -304,7 +466,9 @@ export default function InfrabankPage() {
               <button
                 onClick={() => setIsOutsideEU(true)}
                 className={`flex-1 py-3 px-4 rounded-xl font-medium transition-all ${
-                  isOutsideEU ? 'bg-purple-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  isOutsideEU
+                    ? 'bg-purple-600 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
                 SWIFT (International)
@@ -313,64 +477,111 @@ export default function InfrabankPage() {
 
             {/* SEPA Details */}
             {!isOutsideEU && (
-              <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <h3 className="font-bold text-blue-800">SEPA Bank Transfer</h3>
-                  <span className="text-xs bg-blue-200 text-blue-800 px-2 py-0.5 rounded-full">{sepaDetails.transferTime}</span>
-                </div>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-blue-700">Beneficiary:</span>
-                    <span className="font-medium text-blue-900">{bankDetails.beneficiary}</span>
+              <>
+                <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <h3 className="font-bold text-blue-800">SEPA Bank Transfer</h3>
+                    <span className="text-xs bg-blue-200 text-blue-800 px-2 py-0.5 rounded-full">{sepaDetails.transferTime}</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-blue-700">IBAN:</span>
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono font-medium text-blue-900">{bankDetails.iban}</span>
-                      <button onClick={copyIban} className="p-1 rounded hover:bg-blue-100">
-                        {copiedIban ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4 text-blue-600" />}
-                      </button>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-blue-700">Beneficiary:</span>
+                      <span className="font-medium text-blue-900">{bankDetails.beneficiary}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-blue-700">IBAN:</span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono font-medium text-blue-900">{bankDetails.iban}</span>
+                        <button onClick={copyIban} className="p-1 rounded hover:bg-blue-100">
+                          {copiedIban ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4 text-blue-600" />}
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-700">BIC:</span>
+                      <span className="font-medium text-blue-900">{bankDetails.bic}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-700">Address:</span>
+                      <span className="font-medium text-blue-900 text-right">{bankDetails.address}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-700">Bank:</span>
+                      <span className="font-medium text-blue-900">{bankDetails.bank}</span>
                     </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-700">BIC:</span>
-                    <span className="font-medium text-blue-900">{bankDetails.bic}</span>
-                  </div>
                 </div>
-              </div>
+
+                <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-6">
+                  <h3 className="font-bold text-amber-800 mb-3">Instructions</h3>
+                  <ul className="space-y-2">
+                    {sepaDetails.instructions.map((instruction, i) => (
+                      <li key={i} className="text-amber-700 text-sm flex items-start gap-2">
+                        <span className="text-amber-500 mt-1">-</span> {instruction}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </>
             )}
 
             {/* SWIFT Details */}
             {isOutsideEU && (
-              <div className="bg-purple-50 border border-purple-200 rounded-2xl p-6 mb-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <h3 className="font-bold text-purple-800">International SWIFT Transfer</h3>
-                  <span className="text-xs bg-purple-200 text-purple-800 px-2 py-0.5 rounded-full">{swiftDetails.transferTime}</span>
-                </div>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-purple-700">Beneficiary:</span>
-                    <span className="font-medium text-purple-900">{bankDetails.beneficiary}</span>
+              <>
+                <div className="bg-purple-50 border border-purple-200 rounded-2xl p-6 mb-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <h3 className="font-bold text-purple-800">International SWIFT Transfer</h3>
+                    <span className="text-xs bg-purple-200 text-purple-800 px-2 py-0.5 rounded-full">{swiftDetails.transferTime}</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-purple-700">IBAN:</span>
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono font-medium text-purple-900">{bankDetails.iban}</span>
-                      <button onClick={copyIban} className="p-1 rounded hover:bg-purple-100">
-                        {copiedIban ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4 text-purple-600" />}
-                      </button>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-purple-700">Beneficiary:</span>
+                      <span className="font-medium text-purple-900">{bankDetails.beneficiary}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-purple-700">Accepted Currency:</span>
+                      <span className="font-medium text-purple-900">EUR</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-purple-700">IBAN:</span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-mono font-medium text-purple-900">{bankDetails.iban}</span>
+                        <button onClick={copyIban} className="p-1 rounded hover:bg-purple-100">
+                          {copiedIban ? <Check className="w-4 h-4 text-green-600" /> : <Copy className="w-4 h-4 text-purple-600" />}
+                        </button>
+                      </div>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-purple-700">BIC:</span>
+                      <span className="font-medium text-purple-900">{bankDetails.bic}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-purple-700">Intermediary BIC:</span>
+                      <span className="font-medium text-purple-900">{swiftDetails.intermediaryBic}</span>
+                    </div>
+                    <div className="pt-3 border-t border-purple-200 mt-3">
+                      <p className="text-purple-700 text-xs font-medium mb-2">Beneficiary Address:</p>
+                      <p className="font-medium text-purple-900">{bankDetails.address}</p>
+                    </div>
+                    <div className="pt-3 border-t border-purple-200">
+                      <p className="text-purple-700 text-xs font-medium mb-2">Bank & Address:</p>
+                      <p className="font-medium text-purple-900">{bankDetails.bank}</p>
+                      <p className="text-purple-800 text-sm">{bankDetails.bankAddress}</p>
                     </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-purple-700">BIC:</span>
-                    <span className="font-medium text-purple-900">{bankDetails.bic}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-purple-700">Intermediary BIC:</span>
-                    <span className="font-medium text-purple-900">{swiftDetails.intermediaryBic}</span>
-                  </div>
                 </div>
-              </div>
+
+                <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-6">
+                  <h3 className="font-bold text-amber-800 mb-3">Instructions</h3>
+                  <ul className="space-y-2">
+                    {swiftDetails.instructions.map((instruction, i) => (
+                      <li key={i} className="text-amber-700 text-sm flex items-start gap-2">
+                        <span className="text-amber-500 mt-1">-</span> {instruction}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </>
             )}
 
             <div className="bg-gray-50 rounded-2xl p-6 mb-6">
@@ -406,12 +617,18 @@ export default function InfrabankPage() {
               }} />
             </div>
             <div className="relative z-10 text-center">
+              <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+                Strategic Investment
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Launch Your Digital Bank?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
-                INFRABANK gives you everything you need to compete with established neobanks.
+                Join the fintech revolution with production-ready banking infrastructure. INFRABANK gives you everything
+                you need to compete with established neobanks from day one.
               </p>
-              <p className="text-white/70 mb-8">
+              <p className="text-white/70 mb-8 max-w-xl mx-auto">
                 Valuation: <span className="font-bold text-white">{formatPrice(product.priceMin)}</span>
+                <br />
+                <span className="text-sm">Complete ownership. No royalties. No volume limits.</span>
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 {isAuthenticated ? (
