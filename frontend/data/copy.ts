@@ -5,15 +5,15 @@ export const heroContent = {
   headline: "Enterprise Software Ready to Deploy.\nYours in 5-8 Weeks.",
   alternativeHeadlines: [
     "Don't Build. Buy. Scale Faster.",
-    "19 Production-Ready SaaS Platforms.\nOne Strategic Decision.",
+    "36 Production-Ready SaaS Platforms.\nOne Strategic Decision.",
     "Why Spend 2 Years Building\nWhen You Can Launch in 8 Weeks?",
     "The Software Arsenal Your Competitors Fear.\nNow Available."
   ],
-  subheadline: "Production-ready platforms built over 2 years of intensive development. 400K+ lines of code. Smart contracts require buyer audit before mainnet. Deploy with your team in 5-8 weeks.",
+  subheadline: "Production-ready platforms built over 2 years of intensive development. 750K+ lines of code. Smart contracts require buyer audit before mainnet. Deploy with your team in 5-8 weeks.",
   alternativeSubheadlines: [
     "2 years of R&D. Ready for deployment. Smart contracts need your audit before launch.",
     "From DeFi to Enterprise AI: Complete software stack built by engineers who ship, not promise.",
-    "Two years of development. $4M+ investment. Yours for a fraction. Limited time only."
+    "Two years of development. $8M+ investment. Yours for a fraction. Limited time only."
   ],
   primaryCTA: "Schedule Private Demo",
   secondaryCTA: "Browse Platforms",
@@ -22,7 +22,7 @@ export const heroContent = {
     "Complete documentation included",
     "30 days integration support"
   ],
-  urgencyNote: "19 platforms available. Priced from $800K to $8M."
+  urgencyNote: "36 platforms available. Priced from $120K to $8M."
 }
 
 export const problemSolutionContent = {
@@ -43,7 +43,7 @@ export const problemSolutionContent = {
     { icon: "✅", text: "30 days integration support included" }
   ],
   whatYouGet: [
-    "The code (400K+ LOC, documented, tested)",
+    "The code (750K+ LOC, documented, tested)",
     "The infrastructure blueprints (AWS, Kubernetes, CI/CD ready)",
     "The brand (or rebrand it as your own)",
     "Documentation and architecture guides",
@@ -91,6 +91,16 @@ export const categories = [
     priceRange: "$800K–$8M",
     platforms: ["SÜSINIK", "TRIBUTUM", "AETHER HUB", "AGORA SOCIAL", "ASTRID"],
     color: "amber"
+  },
+  {
+    id: "infra-holdings",
+    title: "INFRA Holdings",
+    subtitle: "Enterprise Financial Infrastructure",
+    description: "Complete enterprise-grade financial technology stack. Banking, payments, custody, compliance, and digital asset infrastructure.",
+    valueProp: "Build your financial empire with battle-tested infrastructure.",
+    priceRange: "$120K–$1M",
+    platforms: ["INFRABANK", "INFRA PAY & TREASURY", "INFRA VAULT CORE", "INFRA DIGITAL ASSETS", "INFRACOINN", "INFRA FORGE", "INFRA GLOBAL INSURANCE", "INFRA SCHOOL", "INFRA DEV·TECH", "DOLLY", "INFRA IAM", "INFRA OBSERVATORY", "INFRA COMPLIANCE ENGINE", "INFRA DATA LAKE", "INFRA HUB", "INFRA AUTOMATION", "INFRA DEVOPS"],
+    color: "emerald"
   }
 ]
 
@@ -594,18 +604,478 @@ export const products = [
     specs: {
       speed: "Minutes for settlement"
     }
+  },
+  // INFRA Holdings - Financial Infrastructure
+  {
+    slug: "infrabank",
+    name: "INFRABANK",
+    tagline: "Digital Banking Platform. Multi-Currency. PSD2 Ready.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 850000,
+    priceMax: 850000,
+    projectedValue2Years: 3500000,
+    featured: true,
+    flagship: true,
+    icon: "🏦",
+    linesOfCode: 85000,
+    techStack: ["TypeScript", "Node.js", "React", "PostgreSQL", "Redis", "AWS"],
+    features: [
+      "Multi-currency accounts (EUR, USD, GBP)",
+      "Real-time balance tracking",
+      "PSD2/Open Banking compliant",
+      "Card issuance integration ready",
+      "AML/KYC module included"
+    ],
+    specs: {
+      currencies: "EUR, USD, GBP + 20 more",
+      compliance: "PSD2, AML5, GDPR",
+      integration: "SWIFT, SEPA ready",
+      security: "SOC2 architecture"
+    }
+  },
+  {
+    slug: "infra-pay-treasury",
+    name: "INFRA PAY & TREASURY",
+    tagline: "International Payments. Multi-Rail Treasury Management.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 750000,
+    priceMax: 750000,
+    projectedValue2Years: 3000000,
+    featured: true,
+    flagship: false,
+    icon: "💸",
+    linesOfCode: 72000,
+    techStack: ["Go", "TypeScript", "React", "PostgreSQL", "Redis", "Kafka"],
+    features: [
+      "SWIFT/SEPA/ACH integration",
+      "Multi-currency treasury",
+      "Real-time FX rates",
+      "Batch payment processing",
+      "Liquidity management"
+    ],
+    specs: {
+      rails: "SWIFT, SEPA, ACH, Faster Payments",
+      currencies: "150+ supported",
+      settlement: "T+0 to T+2",
+      volume: "Enterprise scale"
+    }
+  },
+  {
+    slug: "infra-vault-core",
+    name: "INFRA VAULT CORE",
+    tagline: "Liquidity & Settlement Engine. Real-Time Reconciliation.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 700000,
+    priceMax: 700000,
+    projectedValue2Years: 2800000,
+    featured: false,
+    flagship: false,
+    icon: "🔐",
+    linesOfCode: 65000,
+    techStack: ["Rust", "Go", "PostgreSQL", "Redis", "TimescaleDB"],
+    features: [
+      "Real-time liquidity monitoring",
+      "Automated settlement engine",
+      "Multi-entity reconciliation",
+      "Position management",
+      "Risk limit enforcement"
+    ],
+    specs: {
+      latency: "<50ms settlement",
+      reconciliation: "Real-time",
+      entities: "Multi-entity support",
+      audit: "Complete audit trail"
+    }
+  },
+  {
+    slug: "infra-digital-assets",
+    name: "INFRA DIGITAL ASSETS",
+    tagline: "Institutional Custody. MPC + HSM. Multi-Chain.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 950000,
+    priceMax: 950000,
+    projectedValue2Years: 4000000,
+    featured: true,
+    flagship: true,
+    icon: "🛡️",
+    linesOfCode: 95000,
+    techStack: ["Rust", "Go", "TypeScript", "HSM", "MPC", "PostgreSQL"],
+    features: [
+      "MPC + HSM custody architecture",
+      "Multi-chain support (20+ chains)",
+      "Policy engine with approval flows",
+      "Hot/warm/cold wallet segregation",
+      "Insurance-ready architecture"
+    ],
+    specs: {
+      security: "SOC2 Type II ready",
+      chains: "20+ blockchains",
+      custody: "MPC + HSM hybrid",
+      insurance: "Lloyd's compatible"
+    }
+  },
+  {
+    slug: "infracoinn",
+    name: "INFRACOINN",
+    tagline: "RWA Tokenization Platform. Compliant Asset Issuance.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 900000,
+    priceMax: 900000,
+    projectedValue2Years: 3800000,
+    featured: true,
+    flagship: false,
+    icon: "🪙",
+    linesOfCode: 88000,
+    techStack: ["Solidity", "TypeScript", "React", "Node.js", "PostgreSQL", "IPFS"],
+    features: [
+      "Real-world asset tokenization",
+      "Compliant token issuance (ERC-3643)",
+      "Investor accreditation module",
+      "Secondary market ready",
+      "Dividend/yield distribution"
+    ],
+    specs: {
+      standards: "ERC-3643, ERC-1400",
+      assets: "Real estate, bonds, equity",
+      compliance: "MiFID II, Reg D/S",
+      distribution: "Automated yields"
+    }
+  },
+  {
+    slug: "infra-forge",
+    name: "INFRA FORGE",
+    tagline: "AI Smart Contract Platform. Audit-Ready Generation.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 650000,
+    priceMax: 650000,
+    projectedValue2Years: 2600000,
+    featured: false,
+    flagship: false,
+    icon: "⚒️",
+    linesOfCode: 55000,
+    techStack: ["Python", "Solidity", "TypeScript", "Claude API", "PostgreSQL"],
+    features: [
+      "AI-assisted contract generation",
+      "Security pattern library",
+      "Automated testing suite",
+      "Gas optimization engine",
+      "Formal verification ready"
+    ],
+    specs: {
+      ai: "Claude API powered",
+      languages: "Solidity, Vyper, Rust",
+      testing: "Fuzzing + formal verification",
+      audit: "Pre-audit checklist"
+    }
+  },
+  {
+    slug: "infra-global-insurance",
+    name: "INFRA GLOBAL INSURANCE",
+    tagline: "InsurTech Platform. Parametric & Traditional.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 1000000,
+    priceMax: 1000000,
+    projectedValue2Years: 4500000,
+    featured: true,
+    flagship: true,
+    icon: "🛡️",
+    linesOfCode: 105000,
+    techStack: ["TypeScript", "React", "Node.js", "PostgreSQL", "Python", "AWS"],
+    features: [
+      "Parametric insurance engine",
+      "Traditional policy management",
+      "Claims automation",
+      "Reinsurance module",
+      "Actuarial modeling tools"
+    ],
+    specs: {
+      products: "Parametric + traditional",
+      claims: "Automated processing",
+      compliance: "Solvency II ready",
+      integration: "Reinsurer APIs"
+    }
+  },
+  {
+    slug: "infra-school",
+    name: "INFRA SCHOOL",
+    tagline: "EdTech Foundation. LMS + Certification.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 500000,
+    priceMax: 500000,
+    projectedValue2Years: 2000000,
+    featured: false,
+    flagship: false,
+    icon: "🎓",
+    linesOfCode: 48000,
+    techStack: ["TypeScript", "React", "Node.js", "PostgreSQL", "Redis", "S3"],
+    features: [
+      "Complete LMS platform",
+      "Video course hosting",
+      "Certification & badges",
+      "Progress tracking",
+      "Multi-tenant architecture"
+    ],
+    specs: {
+      content: "Video, docs, quizzes",
+      certificates: "Blockchain-verified optional",
+      tenants: "Multi-tenant ready",
+      scale: "100K+ users"
+    }
+  },
+  {
+    slug: "infra-dev-tech",
+    name: "INFRA DEV·TECH",
+    tagline: "Developer Platform & APIs. SDK Generator.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 600000,
+    priceMax: 600000,
+    projectedValue2Years: 2400000,
+    featured: false,
+    flagship: false,
+    icon: "👨‍💻",
+    linesOfCode: 58000,
+    techStack: ["TypeScript", "Go", "Python", "OpenAPI", "PostgreSQL", "Redis"],
+    features: [
+      "API gateway & management",
+      "SDK auto-generation",
+      "Developer portal",
+      "Rate limiting & quotas",
+      "Usage analytics"
+    ],
+    specs: {
+      sdks: "TypeScript, Python, Go, Java",
+      docs: "OpenAPI auto-generated",
+      portal: "Self-service developer portal",
+      analytics: "Real-time usage metrics"
+    }
+  },
+  {
+    slug: "dolly",
+    name: "DOLLY",
+    tagline: "Central Command Hub. Unified Dashboard.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 500000,
+    priceMax: 500000,
+    projectedValue2Years: 2000000,
+    featured: true,
+    flagship: false,
+    icon: "🎯",
+    linesOfCode: 45000,
+    techStack: ["TypeScript", "React", "Node.js", "PostgreSQL", "Redis", "WebSocket"],
+    features: [
+      "Unified platform dashboard",
+      "Cross-product analytics",
+      "Alert management",
+      "User management hub",
+      "Real-time notifications"
+    ],
+    specs: {
+      integration: "All INFRA products",
+      realtime: "WebSocket updates",
+      alerts: "Multi-channel notifications",
+      sso: "SAML/OIDC support"
+    }
+  },
+  {
+    slug: "infra-iam",
+    name: "INFRA IAM",
+    tagline: "Identity & Access Management. Zero Trust Ready.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 280000,
+    priceMax: 280000,
+    projectedValue2Years: 1100000,
+    featured: false,
+    flagship: false,
+    icon: "🔑",
+    linesOfCode: 32000,
+    techStack: ["Go", "TypeScript", "PostgreSQL", "Redis", "OIDC"],
+    features: [
+      "RBAC & ABAC policies",
+      "SSO (SAML, OIDC)",
+      "MFA enforcement",
+      "API key management",
+      "Audit logging"
+    ],
+    specs: {
+      protocols: "SAML 2.0, OIDC, OAuth 2.0",
+      mfa: "TOTP, WebAuthn, SMS",
+      policies: "RBAC + ABAC",
+      compliance: "SOC2, GDPR"
+    }
+  },
+  {
+    slug: "infra-observatory",
+    name: "INFRA OBSERVATORY",
+    tagline: "Monitoring & Analytics. Full Observability Stack.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 220000,
+    priceMax: 220000,
+    projectedValue2Years: 880000,
+    featured: false,
+    flagship: false,
+    icon: "📡",
+    linesOfCode: 28000,
+    techStack: ["Go", "TypeScript", "Prometheus", "Grafana", "ClickHouse", "Kafka"],
+    features: [
+      "Metrics collection & visualization",
+      "Log aggregation",
+      "Distributed tracing",
+      "Custom dashboards",
+      "Alerting rules engine"
+    ],
+    specs: {
+      metrics: "Prometheus compatible",
+      logs: "Structured logging",
+      traces: "OpenTelemetry",
+      retention: "Configurable"
+    }
+  },
+  {
+    slug: "infra-compliance-engine",
+    name: "INFRA COMPLIANCE ENGINE",
+    tagline: "Regulatory Compliance. Multi-Jurisdiction.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 300000,
+    priceMax: 300000,
+    projectedValue2Years: 1200000,
+    featured: false,
+    flagship: false,
+    icon: "⚖️",
+    linesOfCode: 35000,
+    techStack: ["TypeScript", "Python", "PostgreSQL", "Redis", "Elasticsearch"],
+    features: [
+      "KYC/AML workflow automation",
+      "Sanctions screening",
+      "Transaction monitoring",
+      "Regulatory reporting",
+      "Policy rule engine"
+    ],
+    specs: {
+      jurisdictions: "EU, US, UK, APAC",
+      screening: "OFAC, UN, EU lists",
+      reporting: "SAR, CTR automation",
+      audit: "Complete audit trail"
+    }
+  },
+  {
+    slug: "infra-data-lake",
+    name: "INFRA DATA LAKE",
+    tagline: "Data Warehouse & BI. Real-Time Analytics.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 180000,
+    priceMax: 180000,
+    projectedValue2Years: 720000,
+    featured: false,
+    flagship: false,
+    icon: "🗄️",
+    linesOfCode: 22000,
+    techStack: ["Python", "TypeScript", "ClickHouse", "dbt", "Apache Airflow", "Metabase"],
+    features: [
+      "Data pipeline orchestration",
+      "Real-time data ingestion",
+      "BI dashboard builder",
+      "SQL query interface",
+      "Data transformation (dbt)"
+    ],
+    specs: {
+      ingestion: "Batch + streaming",
+      storage: "ClickHouse columnar",
+      transform: "dbt models",
+      bi: "Metabase included"
+    }
+  },
+  {
+    slug: "infra-hub",
+    name: "INFRA HUB",
+    tagline: "Internal Communications. Team Collaboration.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 150000,
+    priceMax: 150000,
+    projectedValue2Years: 600000,
+    featured: false,
+    flagship: false,
+    icon: "💬",
+    linesOfCode: 18000,
+    techStack: ["TypeScript", "React", "Node.js", "PostgreSQL", "Redis", "WebSocket"],
+    features: [
+      "Team messaging",
+      "Channels & DMs",
+      "File sharing",
+      "Search & archive",
+      "Integration webhooks"
+    ],
+    specs: {
+      messaging: "Real-time WebSocket",
+      storage: "File attachments",
+      search: "Full-text search",
+      integrations: "Webhook support"
+    }
+  },
+  {
+    slug: "infra-automation",
+    name: "INFRA AUTOMATION",
+    tagline: "Workflow Engine. Business Process Automation.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 180000,
+    priceMax: 180000,
+    projectedValue2Years: 720000,
+    featured: false,
+    flagship: false,
+    icon: "⚙️",
+    linesOfCode: 24000,
+    techStack: ["TypeScript", "Node.js", "PostgreSQL", "Redis", "Temporal"],
+    features: [
+      "Visual workflow builder",
+      "Approval chains",
+      "Scheduled tasks",
+      "Event triggers",
+      "Integration connectors"
+    ],
+    specs: {
+      engine: "Temporal-based",
+      triggers: "Event, schedule, manual",
+      connectors: "REST, GraphQL, webhooks",
+      monitoring: "Execution tracking"
+    }
+  },
+  {
+    slug: "infra-devops",
+    name: "INFRA DEVOPS",
+    tagline: "CI/CD & Infrastructure. GitOps Ready.",
+    category: "INFRA_HOLDINGS",
+    priceMin: 120000,
+    priceMax: 120000,
+    projectedValue2Years: 480000,
+    featured: false,
+    flagship: false,
+    icon: "🚀",
+    linesOfCode: 15000,
+    techStack: ["Go", "TypeScript", "Kubernetes", "Terraform", "ArgoCD", "GitHub Actions"],
+    features: [
+      "CI/CD pipeline templates",
+      "Infrastructure as Code",
+      "GitOps deployment",
+      "Environment management",
+      "Secret management"
+    ],
+    specs: {
+      cicd: "GitHub Actions, GitLab CI",
+      iac: "Terraform modules",
+      deploy: "ArgoCD GitOps",
+      secrets: "Vault integration"
+    }
   }
 ]
 
 export const stats = [
-  { value: "400K+", label: "Lines of Code", context: "2 years of development" },
-  { value: "$4M+", label: "Development Investment", context: "What we invested building this" },
+  { value: "750K+", label: "Lines of Code", context: "2 years of development" },
+  { value: "$8M+", label: "Development Investment", context: "What we invested building this" },
   { value: "5-8", label: "Weeks to Deploy", context: "With your DevOps + Backend team" },
   { value: "30", label: "Days Support", context: "Integration support included" },
   { value: "2", label: "Years R&D", context: "Intensive development" },
-  { value: "19", label: "Platforms", context: "Complete ecosystem" },
+  { value: "36", label: "Platforms", context: "Complete ecosystem" },
   { value: "20+", label: "Blockchains", context: "Multi-chain architecture" },
-  { value: "$800K-$8M", label: "Price Range", context: "Based on complexity" }
+  { value: "$120K-$8M", label: "Price Range", context: "Based on complexity" }
 ]
 
 export const usps = [
@@ -661,8 +1131,8 @@ export const faq = [
     answer: "30 days of integration support included: Slack channel with our engineering team, code walkthroughs, architecture Q&A, deployment guidance. After 30 days, your team owns everything independently."
   },
   {
-    question: "Why the price range ($800K - $8M)?",
-    answer: "Pricing reflects development complexity: simpler platforms (tax software, NFT generators) start at $800K. Complex platforms (DEX, custody, enterprise rails) go up to $8M. All platforms are priced below what it would cost to build from scratch."
+    question: "Why the price range ($120K - $8M)?",
+    answer: "Pricing reflects development complexity: simpler platforms (DevOps tools, internal comms) start at $120K. Complex platforms (DEX, custody, enterprise rails, insurance) go up to $8M. All platforms are priced below what it would cost to build from scratch."
   },
   {
     question: "What's the projected 2-year value?",
@@ -692,7 +1162,7 @@ export const faq = [
 
 export const finalCTA = {
   headline: "Ready to Launch Your Platform?\nSkip 2 Years of Development.",
-  subheadline: "19 platforms available. Priced $800K to $8M based on complexity. Professional audit required before mainnet. Your team deploys in 5-8 weeks.",
+  subheadline: "36 platforms available. Priced $120K to $8M based on complexity. Professional audit required before mainnet. Your team deploys in 5-8 weeks.",
   primaryCTA: "Schedule 30-Min Strategy Call",
   secondaryCTA: "Download Platform Catalog",
   contact: {
