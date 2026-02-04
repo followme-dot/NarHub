@@ -14,12 +14,14 @@ import {
   LogIn,
   LogOut,
   Package,
+  Sparkles,
 } from 'lucide-react'
 import { useCartStore } from '@frontend/store/cartStore'
 import { useAuth } from '@frontend/hooks/useAuth'
 
 const navigation = [
   { name: 'Products', href: '/products' },
+  { name: 'Bundles', href: '/bundles', highlight: true },
   {
     name: 'Categories',
     href: '#',
@@ -28,6 +30,7 @@ const navigation = [
       { name: 'Gaming & Metaverse', href: '/products?category=GAMING_METAVERSE' },
       { name: 'Infrastructure & Identity', href: '/products?category=INFRASTRUCTURE_IDENTITY' },
       { name: 'Enterprise & Compliance', href: '/products?category=ENTERPRISE_COMPLIANCE' },
+      { name: 'INFRA Holdings', href: '/products?category=INFRA_HOLDINGS' },
     ],
   },
   { name: 'About', href: '/about' },
@@ -108,8 +111,13 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="px-4 py-2 text-sm font-medium text-[#4a4a68] hover:text-[#1a1a2e] rounded-lg hover:bg-gray-100 transition-all duration-200"
+                    className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 flex items-center gap-1.5 ${
+                      item.highlight
+                        ? 'text-amber-600 hover:text-amber-700 hover:bg-amber-50'
+                        : 'text-[#4a4a68] hover:text-[#1a1a2e] hover:bg-gray-100'
+                    }`}
                   >
+                    {item.highlight && <Sparkles className="w-4 h-4" />}
                     {item.name}
                   </Link>
                 )}
