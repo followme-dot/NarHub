@@ -13,7 +13,7 @@ const trustBadges = [
 const stats = [
   { value: '36', label: 'Enterprise Platforms' },
   { value: '750K+', label: 'Lines of Code' },
-  { value: '$49M+', label: 'Portfolio Value' },
+  { value: '$47.25M', label: 'Portfolio Value' },
   { value: '5-8', label: 'Weeks to Deploy' },
 ]
 
