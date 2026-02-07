@@ -11,14 +11,18 @@ export function cn(...inputs: ClassValue[]) {
 
 /**
  * Format price for display
+ * Price is expected in centavos (e.g., 32000000 = €320,000)
  */
 export function formatPrice(price: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(price)
+  const priceInEuros = price / 100
+
+  if (priceInEuros >= 1000000) {
+    return `€${(priceInEuros / 1000000).toFixed(2)}M`
+  }
+  if (priceInEuros >= 1000) {
+    return `€${(priceInEuros / 1000).toFixed(0)}K`
+  }
+  return `€${priceInEuros.toFixed(0)}`
 }
 
 /**

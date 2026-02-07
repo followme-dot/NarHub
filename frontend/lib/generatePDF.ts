@@ -29,12 +29,16 @@ interface OrderData {
 }
 
 function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(amount)
+  // Amount is in centavos, convert to euros
+  const priceInEuros = amount / 100
+
+  if (priceInEuros >= 1000000) {
+    return `€${(priceInEuros / 1000000).toFixed(2)}M`
+  }
+  if (priceInEuros >= 1000) {
+    return `€${(priceInEuros / 1000).toFixed(0)}K`
+  }
+  return `€${priceInEuros.toFixed(0)}`
 }
 
 function formatPriceRange(min: number, max: number): string {

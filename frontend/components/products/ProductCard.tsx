@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import {
   ArrowRight,
@@ -23,7 +24,10 @@ import {
   Cloud,
   Bot,
   Coins,
+  Play,
 } from 'lucide-react'
+import DemoCarouselModal from './DemoCarouselModal'
+import { formatPrice } from '@frontend/lib/utils'
 
 interface ProductCardProps {
   slug: string
@@ -102,13 +106,14 @@ const categoryConfig: Record<string, {
     badgeBg: 'bg-amber-50',
     badgeText: 'text-amber-700',
   },
-}
-
-function formatPrice(price: number): string {
-  if (price >= 1000000) {
-    return `$${(price / 1000000).toFixed(0)}M`
-  }
-  return `$${(price / 1000).toFixed(0)}K`
+  FINTECH_CORE: {
+    label: 'Enterprise FinTech',
+    gradient: 'from-emerald-600 to-teal-600',
+    iconGradient: 'from-emerald-100 to-teal-100',
+    iconColor: 'text-emerald-600',
+    badgeBg: 'bg-emerald-50',
+    badgeText: 'text-emerald-700',
+  },
 }
 
 export default function ProductCard({
@@ -124,8 +129,15 @@ export default function ProductCard({
   techStack = [],
 }: ProductCardProps) {
   const [isHovered, setIsHovered] = useState(false)
+  const [showDemoModal, setShowDemoModal] = useState(false)
   const config = categoryConfig[category] || categoryConfig.DEFI_TRADING
   const IconComponent = productIcons[slug] || Cpu
+
+  const hasImages = [
+    'argentum-bridge', 'astrid', 'bb-nft', 'bitboots', 'flux', 'forge',
+    'gladius-hub', 'nardium-dex', 'nexus', 'quantum-hedge', 'sseum-games',
+    'susinik', 'templum-dao', 'trade-mad', 'tributum', 'vault', 'veritas-id', 'vigil-ai'
+  ].includes(slug)
 
   return (
     <motion.div
@@ -249,6 +261,29 @@ export default function ProductCard({
                   <ArrowRight className="w-5 h-5 text-white" />
                 </motion.div>
               </div>
+
+              {/* Demo Button - Solo si tiene imágenes */}
+              {hasImages && (
+                <motion.button
+                  onClick={(e) => {
+                    e.preventDefault()
+                    e.stopPropagation()
+                    setShowDemoModal(true)
+                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`
+                    mt-4 w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl
+                    bg-gradient-to-r ${config.gradient}
+                    text-white font-semibold text-sm
+                    shadow-lg hover:shadow-xl
+                    transition-all duration-300
+                  `}
+                >
+                  <Play className="w-4 h-4" />
+                  View Live Demo
+                </motion.button>
+              )}
             </div>
           </div>
 
@@ -263,6 +298,14 @@ export default function ProductCard({
           />
         </div>
       </Link>
+
+      {/* Demo Modal */}
+      <DemoCarouselModal
+        isOpen={showDemoModal}
+        onClose={() => setShowDemoModal(false)}
+        productSlug={slug}
+        productName={name}
+      />
     </motion.div>
   )
 }
