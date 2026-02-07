@@ -30,7 +30,7 @@ export default function InfraDevopsPage() {
   }
 
   const product = {
-    name: 'INFRA DEVOPS',
+    name: 'CICDX',
     icon: '🚀',
     tagline: 'Complete DevOps Automation Platform',
     category: 'INFRA Holdings',
@@ -149,6 +149,30 @@ export default function InfraDevopsPage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -175,9 +199,9 @@ export default function InfraDevopsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA DEVOPS</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About CICDX</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA DEVOPS is a comprehensive DevOps automation platform that transforms how engineering teams build, deploy, and operate software at scale. Born from real-world experience deploying hundreds of production systems, this platform combines battle-tested CI/CD pipeline templates, production-ready Terraform modules for multi-cloud infrastructure, Kubernetes orchestration with ArgoCD GitOps workflows, and enterprise-grade secrets management with HashiCorp Vault integration. Unlike fragmented tooling that requires months of integration work, INFRA DEVOPS provides a cohesive, pre-integrated stack that reduces deployment time from weeks to hours.
+              CICDX is a comprehensive DevOps automation platform that transforms how engineering teams build, deploy, and operate software at scale. Born from real-world experience deploying hundreds of production systems, this platform combines battle-tested CI/CD pipeline templates, production-ready Terraform modules for multi-cloud infrastructure, Kubernetes orchestration with ArgoCD GitOps workflows, and enterprise-grade secrets management with HashiCorp Vault integration. Unlike fragmented tooling that requires months of integration work, INFRA DEVOPS provides a cohesive, pre-integrated stack that reduces deployment time from weeks to hours.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
@@ -191,13 +215,13 @@ export default function InfraDevopsPage() {
                 Market Opportunity
               </h3>
               <p className="leading-relaxed opacity-95">
-                The DevOps platform market is experiencing explosive growth, projected to reach $25.5 billion by 2028. Mid-market companies alone represent a $4B addressable market for turnkey DevOps solutions. With average enterprise DevOps tool spend of $180K annually and consulting costs of $300-500/hour, a pre-built platform like INFRA DEVOPS delivers immediate value. The platform-as-a-product model enables acquirers to either deploy internally for 10x ROI or license to customers for recurring revenue streams.
+                The DevOps platform market is experiencing explosive growth, projected to reach $25.5 billion by 2028. Mid-market companies alone represent a $4B addressable market for turnkey DevOps solutions. With average enterprise DevOps tool spend of $180K annually and consulting costs of $300-500/hour, a pre-built platform like CICDX delivers immediate value. The platform-as-a-product model enables acquirers to either deploy internally for 10x ROI or license to customers for recurring revenue streams.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA DEVOPS differentiates from Jenkins (complex, maintenance-heavy), GitLab CI (vendor lock-in, limited IaC), and CircleCI (SaaS-only, no infrastructure automation) by providing a fully integrated, self-hosted platform that combines all essential DevOps capabilities. Our Terraform modules support AWS, GCP, and Azure with consistent patterns, eliminating multi-cloud complexity. The ArgoCD integration enables true GitOps workflows where infrastructure changes are version-controlled and auditable. Unlike competitors charging $50-200 per user/month, INFRA DEVOPS is a one-time acquisition with perpetual license rights and zero ongoing fees.
+              CICDX differentiates from Jenkins (complex, maintenance-heavy), GitLab CI (vendor lock-in, limited IaC), and CircleCI (SaaS-only, no infrastructure automation) by providing a fully integrated, self-hosted platform that combines all essential DevOps capabilities. Our Terraform modules support AWS, GCP, and Azure with consistent patterns, eliminating multi-cloud complexity. The ArgoCD integration enables true GitOps workflows where infrastructure changes are version-controlled and auditable. Unlike competitors charging $50-200 per user/month, CICDX is a one-time acquisition with perpetual license rights and zero ongoing fees.
             </p>
           </motion.div>
         </div>

@@ -30,7 +30,7 @@ export default function InfraAutomationPage() {
   }
 
   const product = {
-    name: 'INFRA AUTOMATION',
+    name: 'AUTOM',
     icon: '⚙️',
     tagline: 'Enterprise Workflow Automation & RPA Platform',
     category: 'INFRA Holdings',
@@ -148,6 +148,30 @@ export default function InfraAutomationPage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -174,9 +198,9 @@ export default function InfraAutomationPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA AUTOMATION</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About AUTOM</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA AUTOMATION is a comprehensive enterprise workflow automation and Robotic Process Automation (RPA) platform designed to transform how organizations handle repetitive tasks, business processes, and cross-departmental workflows. Built on the battle-tested Temporal workflow engine, it provides unmatched reliability with automatic retries, compensation logic, and durable execution that survives infrastructure failures. The platform features an intuitive visual workflow builder that empowers both technical and non-technical users to design, deploy, and monitor automated processes without writing code, while still offering full programmatic control for complex scenarios.
+              AUTOM is a comprehensive enterprise workflow automation and Robotic Process Automation (RPA) platform designed to transform how organizations handle repetitive tasks, business processes, and cross-departmental workflows. Built on the battle-tested Temporal workflow engine, it provides unmatched reliability with automatic retries, compensation logic, and durable execution that survives infrastructure failures. The platform features an intuitive visual workflow builder that empowers both technical and non-technical users to design, deploy, and monitor automated processes without writing code, while still offering full programmatic control for complex scenarios.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
@@ -190,13 +214,13 @@ export default function InfraAutomationPage() {
                 Market Opportunity
               </h3>
               <p className="leading-relaxed opacity-95">
-                The RPA market is projected to reach $43.5 billion by 2029, growing at 31% CAGR. Enterprise automation spending averaged $2.4M per company in 2024, with large enterprises deploying 50+ automation workflows. INFRA AUTOMATION's competitive pricing at 60-70% below enterprise incumbents like UiPath and Automation Anywhere positions it perfectly for mid-market capture. The platform's perpetual license model generates immediate revenue while creating opportunities for implementation services and custom connector development.
+                The RPA market is projected to reach $43.5 billion by 2029, growing at 31% CAGR. Enterprise automation spending averaged $2.4M per company in 2024, with large enterprises deploying 50+ automation workflows. AUTOM's competitive pricing at 60-70% below enterprise incumbents like UiPath and Automation Anywhere positions it perfectly for mid-market capture. The platform's perpetual license model generates immediate revenue while creating opportunities for implementation services and custom connector development.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              Unlike traditional RPA tools that rely on fragile screen-scraping and require constant maintenance, INFRA AUTOMATION is built API-first with native integrations to modern enterprise systems. The Temporal foundation provides enterprise-grade reliability that competitors cannot match - workflows automatically recover from failures, handle retries with exponential backoff, and maintain state across long-running processes. The visual builder reduces time-to-automation by 80% compared to code-first approaches, while the full TypeScript SDK ensures unlimited customization for complex scenarios. With 50+ pre-built connectors and a connector SDK for custom integrations, deployment time is measured in days, not months.
+              Unlike traditional RPA tools that rely on fragile screen-scraping and require constant maintenance, AUTOM is built API-first with native integrations to modern enterprise systems. The Temporal foundation provides enterprise-grade reliability that competitors cannot match - workflows automatically recover from failures, handle retries with exponential backoff, and maintain state across long-running processes. The visual builder reduces time-to-automation by 80% compared to code-first approaches, while the full TypeScript SDK ensures unlimited customization for complex scenarios. With 50+ pre-built connectors and a connector SDK for custom integrations, deployment time is measured in days, not months.
             </p>
           </motion.div>
         </div>
@@ -206,9 +230,9 @@ export default function InfraAutomationPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA AUTOMATION?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in AUTOM?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA AUTOMATION represents an exceptional opportunity for investors and companies looking to enter the enterprise automation market.
+              Discover the key reasons why AUTOM represents an exceptional opportunity for investors and companies looking to enter the enterprise automation market.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -239,7 +263,7 @@ export default function InfraAutomationPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case: Invoice Processing Automation</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA AUTOMATION on enterprise operations. This case study illustrates the ROI our clients can expect.
+              We analyze a real scenario to demonstrate the transformative impact of AUTOM on enterprise operations. This case study illustrates the ROI our clients can expect.
             </p>
           </div>
 
@@ -254,7 +278,7 @@ export default function InfraAutomationPage() {
                   <span className="text-2xl">Before</span> Manual Process
                 </h4>
                 <p className="text-red-800 text-sm mb-4">
-                  Typical challenges faced before implementing INFRA AUTOMATION:
+                  Typical challenges faced before implementing AUTOM:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-red-800 flex items-start gap-2">
@@ -278,7 +302,7 @@ export default function InfraAutomationPage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">After</span> With INFRA AUTOMATION
+                  <span className="text-2xl">After</span> With AUTOM
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
                   Results achieved after implementing automation:
@@ -322,9 +346,9 @@ export default function InfraAutomationPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA AUTOMATION For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is AUTOM For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA AUTOMATION has been designed for specific organizations that can maximize the value of enterprise workflow automation. If your company fits one of these profiles, INFRA AUTOMATION may be exactly what you need.
+              AUTOM has been designed for specific organizations that can maximize the value of enterprise workflow automation. If your company fits one of these profiles, AUTOM may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -361,7 +385,7 @@ export default function InfraAutomationPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA AUTOMATION, you receive a complete enterprise automation platform ready for deployment, with no hidden costs or recurring license fees.
+              When you acquire AUTOM, you receive a complete enterprise automation platform ready for deployment, with no hidden costs or recurring license fees.
             </p>
           </div>
 
@@ -598,7 +622,7 @@ export default function InfraAutomationPage() {
               <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Strategic Investment
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Enterprise Operations with INFRA AUTOMATION?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Enterprise Operations with AUTOM?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
                 Join the growing number of enterprises leveraging intelligent workflow automation to reduce costs, eliminate errors, and scale operations efficiently.
               </p>

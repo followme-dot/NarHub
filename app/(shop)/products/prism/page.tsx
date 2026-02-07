@@ -30,7 +30,7 @@ export default function InfraDataLakePage() {
   }
 
   const product = {
-    name: 'INFRA DATA LAKE',
+    name: 'PRISM',
     icon: '🗄️',
     tagline: 'Enterprise Data Lake & Analytics Platform',
     category: 'INFRA Holdings',
@@ -149,6 +149,30 @@ export default function InfraDataLakePage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -175,9 +199,9 @@ export default function InfraDataLakePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA DATA LAKE</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About PRISM</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA DATA LAKE is a complete enterprise data lake and analytics platform that unifies data storage, processing, and visualization in a single deployable solution. Built on battle-tested open-source technologies, it combines ClickHouse's lightning-fast columnar storage with dbt's modern data transformation framework, Apache Airflow's robust orchestration engine, and Metabase's intuitive business intelligence interface. The platform handles both batch and real-time streaming ingestion, supporting data volumes from gigabytes to petabytes while maintaining sub-second query performance. Unlike fragmented DIY approaches that require months of integration work, INFRA DATA LAKE delivers a cohesive, production-ready data stack that enterprises can deploy in weeks.
+              PRISM is a complete enterprise data lake and analytics platform that unifies data storage, processing, and visualization in a single deployable solution. Built on battle-tested open-source technologies, it combines ClickHouse's lightning-fast columnar storage with dbt's modern data transformation framework, Apache Airflow's robust orchestration engine, and Metabase's intuitive business intelligence interface. The platform handles both batch and real-time streaming ingestion, supporting data volumes from gigabytes to petabytes while maintaining sub-second query performance. Unlike fragmented DIY approaches that require months of integration work, PRISM delivers a cohesive, production-ready data stack that enterprises can deploy in weeks.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
@@ -191,13 +215,13 @@ export default function InfraDataLakePage() {
                 Market Opportunity
               </h3>
               <p className="leading-relaxed opacity-95">
-                The data analytics and data lake market is projected to reach €35 billion by 2028, representing a 23% compound annual growth rate. Mid-market enterprises are the fastest-growing segment, with 67% planning significant data infrastructure investments in the next 18 months. INFRA DATA LAKE targets this underserved segment with enterprise-grade capabilities at mid-market pricing. The platform's SaaS-ready architecture enables recurring revenue through managed services, with gross margins exceeding 75% at scale.
+                The data analytics and data lake market is projected to reach €35 billion by 2028, representing a 23% compound annual growth rate. Mid-market enterprises are the fastest-growing segment, with 67% planning significant data infrastructure investments in the next 18 months. PRISM targets this underserved segment with enterprise-grade capabilities at mid-market pricing. The platform's SaaS-ready architecture enables recurring revenue through managed services, with gross margins exceeding 75% at scale.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA DATA LAKE differentiates through its integrated, pre-configured architecture that eliminates the complexity of building a modern data stack from scratch. While competitors like Snowflake and Databricks charge based on compute usage (often €500K+ annually for mid-size deployments), INFRA DATA LAKE offers perpetual licensing with predictable costs. The platform's ClickHouse foundation delivers 10-100x faster query performance than traditional databases, while the dbt transformation layer enables data teams to work in familiar SQL rather than requiring specialized engineering skills. Pre-built connectors for 50+ common data sources accelerate time-to-value from months to weeks.
+              PRISM differentiates through its integrated, pre-configured architecture that eliminates the complexity of building a modern data stack from scratch. While competitors like Snowflake and Databricks charge based on compute usage (often €500K+ annually for mid-size deployments), PRISM offers perpetual licensing with predictable costs. The platform's ClickHouse foundation delivers 10-100x faster query performance than traditional databases, while the dbt transformation layer enables data teams to work in familiar SQL rather than requiring specialized engineering skills. Pre-built connectors for 50+ common data sources accelerate time-to-value from months to weeks.
             </p>
           </motion.div>
         </div>
@@ -207,9 +231,9 @@ export default function InfraDataLakePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA DATA LAKE?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in PRISM?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA DATA LAKE represents an exceptional opportunity for investors and companies looking to enter the enterprise data analytics market.
+              Discover the key reasons why PRISM represents an exceptional opportunity for investors and companies looking to enter the enterprise data analytics market.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -253,7 +277,7 @@ export default function InfraDataLakePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA DATA LAKE on enterprise analytics. This case study illustrates the ROI our clients can expect.
+              We analyze a real scenario to demonstrate the transformative impact of PRISM on enterprise analytics. This case study illustrates the ROI our clients can expect.
             </p>
           </div>
 
@@ -268,7 +292,7 @@ export default function InfraDataLakePage() {
                   <span className="text-2xl">-</span> Before (Legacy Infrastructure)
                 </h4>
                 <p className="text-red-800 text-sm mb-4">
-                  Typical challenges faced before implementing INFRA DATA LAKE:
+                  Typical challenges faced before implementing PRISM:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-red-800 flex items-start gap-2">
@@ -292,7 +316,7 @@ export default function InfraDataLakePage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">+</span> After (With INFRA DATA LAKE)
+                  <span className="text-2xl">+</span> After (With PRISM)
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
                   Results achieved after implementation:
@@ -336,9 +360,9 @@ export default function InfraDataLakePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA DATA LAKE For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is PRISM For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA DATA LAKE has been designed for organizations that need enterprise-grade analytics without the complexity and cost of traditional solutions. If your company fits one of these profiles, INFRA DATA LAKE may be exactly what you need.
+              PRISM has been designed for organizations that need enterprise-grade analytics without the complexity and cost of traditional solutions. If your company fits one of these profiles, PRISM may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -375,7 +399,7 @@ export default function InfraDataLakePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA DATA LAKE, you receive a complete package designed for immediate deployment and scaling, with no hidden costs or ongoing licensing fees.
+              When you acquire PRISM, you receive a complete package designed for immediate deployment and scaling, with no hidden costs or ongoing licensing fees.
             </p>
           </div>
 
@@ -424,7 +448,7 @@ export default function InfraDataLakePage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Perpetual License</h3>
               </div>
               <p className="text-[#4a4a68]">
-                Once purchased, INFRA DATA LAKE is yours forever. No monthly fees, no per-query charges, no data volume limits. Deploy for internal use or resell as a managed service.
+                Once purchased, PRISM is yours forever. No monthly fees, no per-query charges, no data volume limits. Deploy for internal use or resell as a managed service.
               </p>
             </div>
           </div>
@@ -612,9 +636,9 @@ export default function InfraDataLakePage() {
               <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Strategic Investment
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Data Infrastructure with INFRA DATA LAKE?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Data Infrastructure with PRISM?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
-                Join leading enterprises already using INFRA DATA LAKE to unify their data, accelerate insights, and reduce analytics costs by 80%.
+                Join leading enterprises already using PRISM to unify their data, accelerate insights, and reduce analytics costs by 80%.
               </p>
               <p className="text-white/70 mb-8 max-w-xl mx-auto">
                 Valuation: <span className="font-bold text-white">{formatPrice(product.priceMin)} - {formatPrice(product.priceMax)}</span>

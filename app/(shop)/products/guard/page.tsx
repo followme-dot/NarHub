@@ -30,7 +30,7 @@ export default function InfraGlobalInsurancePage() {
   }
 
   const product = {
-    name: 'INFRA GLOBAL INSURANCE',
+    name: 'GUARD',
     icon: '🛡️',
     tagline: 'InsurTech Platform. Parametric & Traditional.',
     category: 'INFRA Holdings',
@@ -156,6 +156,30 @@ export default function InfraGlobalInsurancePage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -182,14 +206,14 @@ export default function InfraGlobalInsurancePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA GLOBAL INSURANCE</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About GUARD</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA GLOBAL INSURANCE is a comprehensive InsurTech platform that enables you to launch both innovative parametric insurance products and traditional policy management. Built by a team with deep insurance industry experience, this platform handles everything from product design and underwriting to claims processing and regulatory reporting. Whether you're launching a new MGA, building embedded insurance products, or modernizing an existing carrier's technology stack, INFRA GLOBAL INSURANCE provides the foundation you need.
+              GUARD is a comprehensive InsurTech platform that enables you to launch both innovative parametric insurance products and traditional policy management. Built by a team with deep insurance industry experience, this platform handles everything from product design and underwriting to claims processing and regulatory reporting. Whether you're launching a new MGA, building embedded insurance products, or modernizing an existing carrier's technology stack, GUARD provides the foundation you need.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
             <p className="text-[#4a4a68] leading-relaxed mb-8">
-              The global InsurTech market is projected to reach $158 billion by 2028, growing at 32% CAGR. Parametric insurance alone is expected to grow from $11.7 billion to $29.3 billion by 2031. Traditional insurers are struggling to modernize their legacy systems, creating massive opportunities for technology-first entrants. INFRA GLOBAL INSURANCE positions you to capture this growth with a platform that combines modern technology with deep insurance domain expertise.
+              The global InsurTech market is projected to reach $158 billion by 2028, growing at 32% CAGR. Parametric insurance alone is expected to grow from $11.7 billion to $29.3 billion by 2031. Traditional insurers are struggling to modernize their legacy systems, creating massive opportunities for technology-first entrants. GUARD positions you to capture this growth with a platform that combines modern technology with deep insurance domain expertise.
             </p>
 
             <div className={`bg-gradient-to-r ${product.gradient.from} ${product.gradient.to} rounded-2xl p-8 text-white mb-8`}>
@@ -204,7 +228,7 @@ export default function InfraGlobalInsurancePage() {
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA GLOBAL INSURANCE is unique in supporting both parametric and traditional insurance within a single platform. Most competitors focus on one or the other. Our parametric engine connects to 50+ data sources (weather, flight, IoT sensors) for automatic trigger verification and instant payouts. The traditional module handles the full policy lifecycle with configurable workflows, document generation, and multi-currency support. Solvency II reporting is built-in, not bolted-on, saving months of compliance work.
+              GUARD is unique in supporting both parametric and traditional insurance within a single platform. Most competitors focus on one or the other. Our parametric engine connects to 50+ data sources (weather, flight, IoT sensors) for automatic trigger verification and instant payouts. The traditional module handles the full policy lifecycle with configurable workflows, document generation, and multi-currency support. Solvency II reporting is built-in, not bolted-on, saving months of compliance work.
             </p>
           </motion.div>
         </div>
@@ -214,7 +238,7 @@ export default function InfraGlobalInsurancePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA GLOBAL INSURANCE?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in GUARD?</h2>
             <p className="text-lg text-[#4a4a68]">
               Key reasons why this platform represents an exceptional opportunity for entering the InsurTech market.
             </p>
@@ -247,7 +271,7 @@ export default function InfraGlobalInsurancePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA GLOBAL INSURANCE on business results.
+              We analyze a real scenario to demonstrate the transformative impact of GUARD on business results.
             </p>
           </div>
 
@@ -279,7 +303,7 @@ export default function InfraGlobalInsurancePage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">✅</span> With INFRA GLOBAL INSURANCE
+                  <span className="text-2xl">✅</span> With GUARD
                 </h4>
                 <ul className="space-y-3">
                   <li className="text-green-800 flex items-start gap-2">
@@ -316,7 +340,7 @@ export default function InfraGlobalInsurancePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA GLOBAL INSURANCE For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is GUARD For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
               This platform has been designed for organizations that can maximize its value.
             </p>
@@ -349,7 +373,7 @@ export default function InfraGlobalInsurancePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA GLOBAL INSURANCE, you receive a complete package designed for immediate deployment.
+              When you acquire GUARD, you receive a complete package designed for immediate deployment.
             </p>
           </div>
 

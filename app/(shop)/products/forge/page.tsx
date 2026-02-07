@@ -30,7 +30,7 @@ export default function InfraForgePage() {
   }
 
   const product = {
-    name: 'INFRA FORGE',
+    name: 'FORGE',
     icon: '⚒️',
     tagline: 'AI Smart Contract Platform. Audit-Ready Generation.',
     category: 'INFRA Holdings',
@@ -147,6 +147,30 @@ export default function InfraForgePage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -174,14 +198,14 @@ export default function InfraForgePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA FORGE</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About FORGE</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA FORGE revolutionizes smart contract development with AI-assisted code generation powered by Claude API. Developers can describe contract requirements in natural language and receive secure, optimized code following best practices and security patterns. The platform integrates 55,000+ lines of production-ready code across Python, Solidity, TypeScript, with PostgreSQL for data persistence.
+              FORGE revolutionizes smart contract development with AI-assisted code generation powered by Claude API. Developers can describe contract requirements in natural language and receive secure, optimized code following best practices and security patterns. The platform integrates 55,000+ lines of production-ready code across Python, Solidity, TypeScript, with PostgreSQL for data persistence.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
             <p className="text-[#4a4a68] leading-relaxed mb-8">
-              Smart contract development remains one of the most expensive and error-prone aspects of blockchain projects. Security vulnerabilities have led to billions in losses across DeFi protocols. The demand for secure, auditable smart contracts has never been higher, yet the talent pool of experienced Solidity developers remains limited. Building a comparable platform from scratch typically costs $1.5-2.5M and takes 12-18 months. INFRA FORGE delivers this capability in 5-8 weeks at a fraction of the cost.
+              Smart contract development remains one of the most expensive and error-prone aspects of blockchain projects. Security vulnerabilities have led to billions in losses across DeFi protocols. The demand for secure, auditable smart contracts has never been higher, yet the talent pool of experienced Solidity developers remains limited. Building a comparable platform from scratch typically costs $1.5-2.5M and takes 12-18 months. FORGE delivers this capability in 5-8 weeks at a fraction of the cost.
             </p>
 
             <div className={`bg-gradient-to-r ${product.gradient.from} ${product.gradient.to} rounded-2xl p-8 text-white mb-8`}>
@@ -196,7 +220,7 @@ export default function InfraForgePage() {
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA FORGE is the only platform combining AI-powered code generation with a comprehensive security pattern library and automated testing. While competitors offer either AI assistance OR security tooling, INFRA FORGE integrates both into a seamless workflow. The Claude API integration enables developers to describe complex contract logic in plain English, while the security library automatically applies battle-tested patterns. The gas optimization engine ensures deployed contracts are cost-efficient, and formal verification readiness means contracts are prepared for the highest level of security audits.
+              FORGE is the only platform combining AI-powered code generation with a comprehensive security pattern library and automated testing. While competitors offer either AI assistance OR security tooling, FORGE integrates both into a seamless workflow. The Claude API integration enables developers to describe complex contract logic in plain English, while the security library automatically applies battle-tested patterns. The gas optimization engine ensures deployed contracts are cost-efficient, and formal verification readiness means contracts are prepared for the highest level of security audits.
             </p>
           </motion.div>
         </div>
@@ -206,15 +230,15 @@ export default function InfraForgePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA FORGE?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in FORGE?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA FORGE represents an exceptional opportunity for organizations looking to accelerate secure smart contract development.
+              Discover the key reasons why FORGE represents an exceptional opportunity for organizations looking to accelerate secure smart contract development.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               'Building from scratch costs $1.5-2.5M over 12-18 months',
-              'With INFRA FORGE: deploy in 5-8 weeks for €650K',
+              'With FORGE: deploy in 5-8 weeks for €650K',
               'AI-assisted generation reduces development time by 70%',
               'Security pattern library prevents common vulnerabilities',
               'Gas optimization saves 20-40% on deployment costs',
@@ -242,7 +266,7 @@ export default function InfraForgePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA FORGE on smart contract development. This case study illustrates the potential ROI and time savings our clients can expect.
+              We analyze a real scenario to demonstrate the transformative impact of FORGE on smart contract development. This case study illustrates the potential ROI and time savings our clients can expect.
             </p>
           </div>
 
@@ -257,7 +281,7 @@ export default function InfraForgePage() {
                   <span className="text-2xl">X</span> Before (Traditional Development)
                 </h4>
                 <p className="text-red-800 text-sm mb-4">
-                  Typical challenges faced before using INFRA FORGE:
+                  Typical challenges faced before using FORGE:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-red-800 flex items-start gap-2">
@@ -281,7 +305,7 @@ export default function InfraForgePage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">+</span> After (With INFRA FORGE)
+                  <span className="text-2xl">+</span> After (With FORGE)
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
                   Results our clients achieve after implementation:
@@ -325,9 +349,9 @@ export default function InfraForgePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA FORGE For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is FORGE For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA FORGE has been designed with specific organizations in mind that can maximize the value of this AI-powered smart contract platform. If your company fits one of these profiles, INFRA FORGE may be exactly what you need.
+              FORGE has been designed with specific organizations in mind that can maximize the value of this AI-powered smart contract platform. If your company fits one of these profiles, FORGE may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -364,7 +388,7 @@ export default function InfraForgePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA FORGE, you receive a complete package designed for you to deploy and scale your smart contract development immediately, with no hidden costs or third-party dependencies.
+              When you acquire FORGE, you receive a complete package designed for you to deploy and scale your smart contract development immediately, with no hidden costs or third-party dependencies.
             </p>
           </div>
 
@@ -413,7 +437,7 @@ export default function InfraForgePage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Full IP Transfer</h3>
               </div>
               <p className="text-[#4a4a68]">
-                Once purchased, INFRA FORGE is yours forever with 100% ownership and perpetual license. No monthly payments, no royalties, no usage limits. Deploy for as many projects as you need.
+                Once purchased, FORGE is yours forever with 100% ownership and perpetual license. No monthly payments, no royalties, no usage limits. Deploy for as many projects as you need.
               </p>
             </div>
           </div>
@@ -601,7 +625,7 @@ export default function InfraForgePage() {
               <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Strategic Investment
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Accelerate Your Smart Contract Development with INFRA FORGE?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Accelerate Your Smart Contract Development with FORGE?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
                 Join leading DeFi protocols and blockchain startups already using AI-powered smart contract generation to ship secure code faster and at lower cost.
               </p>

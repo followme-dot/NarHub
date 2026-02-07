@@ -30,7 +30,7 @@ export default function InfraIamPage() {
   }
 
   const product = {
-    name: 'INFRA IAM',
+    name: 'KEYZ',
     icon: '🔑',
     tagline: 'Identity & Access Management. Zero Trust Ready.',
     category: 'INFRA Holdings',
@@ -148,6 +148,30 @@ export default function InfraIamPage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -174,9 +198,9 @@ export default function InfraIamPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA IAM</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About KEYZ</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA IAM is a comprehensive enterprise identity and access management platform built for modern zero-trust security architectures. The platform provides a unified solution for managing user identities, authentication flows, and fine-grained access control across your entire technology stack. Unlike legacy IAM solutions that bolt on features over decades, INFRA IAM was designed from the ground up with a microservices architecture, API-first approach, and support for both traditional RBAC (Role-Based Access Control) and modern ABAC (Attribute-Based Access Control) policies. This enables organizations to implement sophisticated access rules based on user attributes, resource properties, environmental conditions, and business context—all while maintaining sub-100ms authentication latency at scale.
+              KEYZ is a comprehensive enterprise identity and access management platform built for modern zero-trust security architectures. The platform provides a unified solution for managing user identities, authentication flows, and fine-grained access control across your entire technology stack. Unlike legacy IAM solutions that bolt on features over decades, KEYZ was designed from the ground up with a microservices architecture, API-first approach, and support for both traditional RBAC (Role-Based Access Control) and modern ABAC (Attribute-Based Access Control) policies. This enables organizations to implement sophisticated access rules based on user attributes, resource properties, environmental conditions, and business context—all while maintaining sub-100ms authentication latency at scale.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
@@ -190,13 +214,13 @@ export default function InfraIamPage() {
                 Market Opportunity
               </h3>
               <p className="leading-relaxed opacity-95">
-                With 85% of enterprises planning to increase IAM spending over the next 3 years and average deal sizes exceeding $250K annually for enterprise customers, INFRA IAM is positioned to capture significant market share. The platform's modern architecture and competitive pricing (40-60% below Okta/Auth0 for comparable features) creates a compelling value proposition. Current market leaders like Okta trade at 8-12x revenue multiples, suggesting substantial valuation upside for well-positioned IAM platforms. The B2B SaaS model with 85%+ gross margins and 95%+ net revenue retention makes this an attractive investment category.
+                With 85% of enterprises planning to increase IAM spending over the next 3 years and average deal sizes exceeding $250K annually for enterprise customers, KEYZ is positioned to capture significant market share. The platform's modern architecture and competitive pricing (40-60% below Okta/Auth0 for comparable features) creates a compelling value proposition. Current market leaders like Okta trade at 8-12x revenue multiples, suggesting substantial valuation upside for well-positioned IAM platforms. The B2B SaaS model with 85%+ gross margins and 95%+ net revenue retention makes this an attractive investment category.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA IAM differentiates from incumbents like Okta, Auth0, and Ping Identity through three key advantages: (1) <strong>Modern Architecture</strong>—built on Go and TypeScript with Kubernetes-native deployment, INFRA IAM delivers 10x faster authentication compared to legacy Java-based solutions; (2) <strong>True Zero-Trust Design</strong>—unlike competitors that retrofitted zero-trust capabilities, INFRA IAM implements continuous verification, least-privilege access, and micro-segmentation as core platform features; (3) <strong>Developer Experience</strong>—with comprehensive SDKs, OpenAPI specifications, and Terraform providers, INFRA IAM reduces integration time from weeks to days. Additionally, the platform's hybrid deployment model (SaaS, private cloud, or on-premise) addresses the needs of regulated industries that cannot use public cloud IAM solutions.
+              KEYZ differentiates from incumbents like Okta, Auth0, and Ping Identity through three key advantages: (1) <strong>Modern Architecture</strong>—built on Go and TypeScript with Kubernetes-native deployment, KEYZ delivers 10x faster authentication compared to legacy Java-based solutions; (2) <strong>True Zero-Trust Design</strong>—unlike competitors that retrofitted zero-trust capabilities, KEYZ implements continuous verification, least-privilege access, and micro-segmentation as core platform features; (3) <strong>Developer Experience</strong>—with comprehensive SDKs, OpenAPI specifications, and Terraform providers, KEYZ reduces integration time from weeks to days. Additionally, the platform's hybrid deployment model (SaaS, private cloud, or on-premise) addresses the needs of regulated industries that cannot use public cloud IAM solutions.
             </p>
           </motion.div>
         </div>
@@ -206,15 +230,15 @@ export default function InfraIamPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA IAM?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in KEYZ?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA IAM represents an exceptional opportunity for investors and enterprises looking to enter or expand in the identity management market.
+              Discover the key reasons why KEYZ represents an exceptional opportunity for investors and enterprises looking to enter or expand in the identity management market.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: TrendingUp, text: '$18B+ market growing 15%+ annually with increasing regulatory pressure driving mandatory IAM adoption' },
-              { icon: Shield, text: 'Zero-trust architecture positions INFRA IAM for the next decade of enterprise security requirements' },
+              { icon: Shield, text: 'Zero-trust architecture positions KEYZ for the next decade of enterprise security requirements' },
               { icon: Rocket, text: 'Exit potential: Strategic acquisition targets include Cisco, Microsoft, CrowdStrike, and private equity at 8-12x revenue' }
             ].map((reason, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 * index }}
@@ -239,7 +263,7 @@ export default function InfraIamPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real enterprise scenario to demonstrate the transformative impact of INFRA IAM on security posture and operational efficiency. This case study illustrates the ROI our clients typically achieve.
+              We analyze a real enterprise scenario to demonstrate the transformative impact of KEYZ on security posture and operational efficiency. This case study illustrates the ROI our clients typically achieve.
             </p>
           </div>
 
@@ -254,7 +278,7 @@ export default function InfraIamPage() {
                   <span className="text-2xl">Before</span> (Legacy IAM / Manual Processes)
                 </h4>
                 <p className="text-red-800 text-sm mb-4">
-                  Typical challenges faced before implementing INFRA IAM:
+                  Typical challenges faced before implementing KEYZ:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-red-800 flex items-start gap-2">
@@ -278,10 +302,10 @@ export default function InfraIamPage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">After</span> (With INFRA IAM)
+                  <span className="text-2xl">After</span> (With KEYZ)
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
-                  Results achieved after INFRA IAM implementation:
+                  Results achieved after KEYZ implementation:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-green-800 flex items-start gap-2">
@@ -322,9 +346,9 @@ export default function InfraIamPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA IAM For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is KEYZ For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA IAM has been designed for specific organizations that can maximize the value of enterprise-grade identity management. If your company fits one of these profiles, INFRA IAM may be exactly what you need.
+              KEYZ has been designed for specific organizations that can maximize the value of enterprise-grade identity management. If your company fits one of these profiles, KEYZ may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -361,7 +385,7 @@ export default function InfraIamPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA IAM, you receive a complete package designed for immediate deployment and enterprise scaling, with no hidden costs or vendor lock-in.
+              When you acquire KEYZ, you receive a complete package designed for immediate deployment and enterprise scaling, with no hidden costs or vendor lock-in.
             </p>
           </div>
 
@@ -600,7 +624,7 @@ export default function InfraIamPage() {
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Own Enterprise-Grade Identity Infrastructure?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
-                Join forward-thinking enterprises and investors securing their position in the $18B+ identity management market with INFRA IAM.
+                Join forward-thinking enterprises and investors securing their position in the $18B+ identity management market with KEYZ.
               </p>
               <p className="text-white/70 mb-8 max-w-xl mx-auto">
                 Valuation: <span className="font-bold text-white">{formatPrice(product.priceMin)} - {formatPrice(product.priceMax)}</span>

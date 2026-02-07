@@ -30,7 +30,7 @@ export default function InfraDigitalAssetsPage() {
   }
 
   const product = {
-    name: 'INFRA DIGITAL ASSETS',
+    name: 'AEGIS',
     icon: '🛡️',
     tagline: 'Institutional Custody. MPC + HSM. Multi-Chain.',
     category: 'INFRA Holdings',
@@ -151,6 +151,30 @@ export default function InfraDigitalAssetsPage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -177,9 +201,9 @@ export default function InfraDigitalAssetsPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA DIGITAL ASSETS</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About AEGIS</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA DIGITAL ASSETS represents the gold standard in institutional digital asset custody infrastructure. Built by a team of security engineers from leading custody providers and tier-1 banks, this platform combines Multi-Party Computation (MPC) with Hardware Security Modules (HSM) to deliver the highest security standards required by institutional investors, regulated entities, and enterprises entering the digital asset space. The architecture eliminates single points of failure while maintaining operational efficiency for high-frequency trading environments.
+              AEGIS represents the gold standard in institutional digital asset custody infrastructure. Built by a team of security engineers from leading custody providers and tier-1 banks, this platform combines Multi-Party Computation (MPC) with Hardware Security Modules (HSM) to deliver the highest security standards required by institutional investors, regulated entities, and enterprises entering the digital asset space. The architecture eliminates single points of failure while maintaining operational efficiency for high-frequency trading environments.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
@@ -193,13 +217,13 @@ export default function InfraDigitalAssetsPage() {
                 Market Opportunity
               </h3>
               <p className="leading-relaxed opacity-95">
-                The global crypto custody market is projected to reach $16 billion by 2028, growing at 26% CAGR. Institutional adoption is accelerating with major banks like BNY Mellon, State Street, and regional banks launching custody services. The B2B custody infrastructure market alone represents a $2B+ opportunity, with exchanges, asset managers, and fintechs seeking white-label solutions. INFRA DIGITAL ASSETS positions you to capture this market at a fraction of the build cost with 5-8 weeks to deployment versus 24+ months.
+                The global crypto custody market is projected to reach $16 billion by 2028, growing at 26% CAGR. Institutional adoption is accelerating with major banks like BNY Mellon, State Street, and regional banks launching custody services. The B2B custody infrastructure market alone represents a $2B+ opportunity, with exchanges, asset managers, and fintechs seeking white-label solutions. AEGIS positions you to capture this market at a fraction of the build cost with 5-8 weeks to deployment versus 24+ months.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA DIGITAL ASSETS is the only custody solution offering true MPC + HSM hybrid architecture with support for 20+ blockchains out of the box. Our policy engine enables complex multi-signature approval workflows with time-locks, spending limits, and role-based access controls. The hot/warm/cold wallet segregation with automated rebalancing ensures optimal security-liquidity balance. Unlike competitors requiring ongoing licensing fees, this is a one-time acquisition with full IP transfer. The architecture is pre-certified for SOC2 Type II and designed for Lloyd's insurance compatibility, dramatically reducing your compliance timeline.
+              AEGIS is the only custody solution offering true MPC + HSM hybrid architecture with support for 20+ blockchains out of the box. Our policy engine enables complex multi-signature approval workflows with time-locks, spending limits, and role-based access controls. The hot/warm/cold wallet segregation with automated rebalancing ensures optimal security-liquidity balance. Unlike competitors requiring ongoing licensing fees, this is a one-time acquisition with full IP transfer. The architecture is pre-certified for SOC2 Type II and designed for Lloyd's insurance compatibility, dramatically reducing your compliance timeline.
             </p>
           </motion.div>
         </div>
@@ -209,14 +233,14 @@ export default function InfraDigitalAssetsPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA DIGITAL ASSETS?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in AEGIS?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA DIGITAL ASSETS represents an exceptional opportunity for institutions looking to enter the custody market or enhance their existing digital asset infrastructure.
+              Discover the key reasons why AEGIS represents an exceptional opportunity for institutions looking to enter the custody market or enhance their existing digital asset infrastructure.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'Build cost: $3-5M over 24+ months. With INFRA: €950K and 5-8 weeks.',
+              'Build cost: $3-5M over 24+ months. With AEGIS: €950K and 5-8 weeks.',
               'Institutional custody market growing 26% CAGR to $16B by 2028',
               'White-label licensing generates recurring revenue with 80%+ margins'
             ].map((reason, index) => (
@@ -242,7 +266,7 @@ export default function InfraDigitalAssetsPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA DIGITAL ASSETS on time-to-market and cost efficiency. This case study illustrates the potential ROI for institutions building custody services.
+              We analyze a real scenario to demonstrate the transformative impact of AEGIS on time-to-market and cost efficiency. This case study illustrates the potential ROI for institutions building custody services.
             </p>
           </div>
 
@@ -281,7 +305,7 @@ export default function InfraDigitalAssetsPage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">&#9989;</span> After (With INFRA DIGITAL ASSETS)
+                  <span className="text-2xl">&#9989;</span> After (With AEGIS)
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
                   Results our clients achieve after implementation:
@@ -325,9 +349,9 @@ export default function InfraDigitalAssetsPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA DIGITAL ASSETS For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is AEGIS For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA DIGITAL ASSETS has been designed with specific organizations in mind that can maximize the value of this infrastructure. If your organization fits one of these profiles, INFRA DIGITAL ASSETS may be exactly what you need.
+              AEGIS has been designed with specific organizations in mind that can maximize the value of this infrastructure. If your organization fits one of these profiles, AEGIS may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -364,7 +388,7 @@ export default function InfraDigitalAssetsPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA DIGITAL ASSETS, you receive a complete package designed for you to deploy and scale your custody infrastructure immediately, with no hidden costs or ongoing licensing fees.
+              When you acquire AEGIS, you receive a complete package designed for you to deploy and scale your custody infrastructure immediately, with no hidden costs or ongoing licensing fees.
             </p>
           </div>
 
@@ -601,9 +625,9 @@ export default function InfraDigitalAssetsPage() {
               <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Flagship Product
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Launch Institutional-Grade Custody with INFRA DIGITAL ASSETS?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Launch Institutional-Grade Custody with AEGIS?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
-                Join leading exchanges, asset managers, and financial institutions already using INFRA DIGITAL ASSETS to secure billions in digital assets with institutional-grade infrastructure.
+                Join leading exchanges, asset managers, and financial institutions already using AEGIS to secure billions in digital assets with institutional-grade infrastructure.
               </p>
               <p className="text-white/70 mb-8 max-w-xl mx-auto">
                 Valuation: <span className="font-bold text-white">{formatPrice(product.priceMin)}</span>

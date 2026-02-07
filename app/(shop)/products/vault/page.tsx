@@ -30,7 +30,7 @@ export default function InfraVaultCorePage() {
   }
 
   const product = {
-    name: 'INFRA VAULT CORE',
+    name: 'VAULT',
     icon: '🔐',
     tagline: 'Liquidity & Settlement Engine. Real-Time Reconciliation.',
     category: 'INFRA Holdings',
@@ -150,6 +150,30 @@ export default function InfraVaultCorePage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -176,9 +200,9 @@ export default function InfraVaultCorePage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA VAULT CORE</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About VAULT</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA VAULT CORE is the backbone of financial operations for institutions requiring real-time liquidity monitoring,
+              VAULT is the backbone of financial operations for institutions requiring real-time liquidity monitoring,
               automated settlement processing, and multi-entity reconciliation. Built by veteran fintech engineers from Goldman Sachs,
               Stripe, and Revolut, this system handles thousands of transactions per second with sub-50ms latency.
               The platform combines the raw performance of Rust with Go's concurrency model, backed by PostgreSQL for ACID compliance,
@@ -190,7 +214,7 @@ export default function InfraVaultCorePage() {
               Treasury and settlement systems are the lifeblood of financial institutions. Banks, payment processors, and crypto exchanges
               spend $2-3M and 18-24 months building these systems from scratch. Yet most fail to achieve the performance and reliability
               required for modern financial operations. The global treasury management market exceeds $5B annually, with demand accelerating
-              as real-time payments become the standard. INFRA VAULT CORE addresses this gap by providing production-ready infrastructure
+              as real-time payments become the standard. VAULT addresses this gap by providing production-ready infrastructure
               that institutions can deploy in weeks, not years.
             </p>
 
@@ -202,14 +226,14 @@ export default function InfraVaultCorePage() {
               <p className="leading-relaxed opacity-95">
                 The treasury management software market is projected to reach $7.2B by 2027, growing at 13.5% CAGR. Financial institutions
                 are under increasing pressure to provide real-time settlement capabilities as instant payment networks expand globally.
-                Building from scratch costs $2-3M and takes 18-24 months with a team of 8-12 engineers. INFRA VAULT CORE enables deployment
+                Building from scratch costs $2-3M and takes 18-24 months with a team of 8-12 engineers. VAULT enables deployment
                 in 5-8 weeks at a fraction of the cost, with battle-tested code that's already handling production workloads.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA VAULT CORE is the only solution combining real-time liquidity monitoring, automated settlement, multi-entity reconciliation,
+              VAULT is the only solution combining real-time liquidity monitoring, automated settlement, multi-entity reconciliation,
               and risk limit enforcement in a single, integrated platform. Our Rust-based settlement engine achieves sub-50ms latency,
               10x faster than Java-based alternatives. The system's multi-entity architecture supports complex corporate structures with
               automated inter-company reconciliation. Complete audit trails satisfy SOC 2, PCI-DSS, and MiFID II requirements out of the box.
@@ -223,9 +247,9 @@ export default function InfraVaultCorePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA VAULT CORE?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in VAULT?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA VAULT CORE represents an exceptional opportunity for financial institutions
+              Discover the key reasons why VAULT represents an exceptional opportunity for financial institutions
               looking to modernize their treasury and settlement operations without the massive investment of building from scratch.
             </p>
           </div>
@@ -257,7 +281,7 @@ export default function InfraVaultCorePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario comparing building a treasury system from scratch versus acquiring INFRA VAULT CORE.
+              We analyze a real scenario comparing building a treasury system from scratch versus acquiring VAULT.
               This case study illustrates the massive cost and time savings our clients achieve.
             </p>
           </div>
@@ -297,10 +321,10 @@ export default function InfraVaultCorePage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">+</span> With INFRA VAULT CORE
+                  <span className="text-2xl">+</span> With VAULT
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
-                  Results our clients achieve with INFRA VAULT CORE:
+                  Results our clients achieve with VAULT:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-green-800 flex items-start gap-2">
@@ -341,10 +365,10 @@ export default function InfraVaultCorePage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA VAULT CORE For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is VAULT For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA VAULT CORE has been designed for organizations that require institutional-grade treasury and settlement infrastructure.
-              If your company fits one of these profiles, INFRA VAULT CORE may be exactly what you need.
+              VAULT has been designed for organizations that require institutional-grade treasury and settlement infrastructure.
+              If your company fits one of these profiles, VAULT may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -381,7 +405,7 @@ export default function InfraVaultCorePage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA VAULT CORE, you receive a complete package designed for you to deploy and scale
+              When you acquire VAULT, you receive a complete package designed for you to deploy and scale
               your treasury infrastructure immediately, with no hidden costs or third-party dependencies.
             </p>
           </div>
@@ -434,7 +458,7 @@ export default function InfraVaultCorePage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Perpetual License</h3>
               </div>
               <p className="text-[#4a4a68]">
-                Once purchased, INFRA VAULT CORE is yours forever. No monthly payments, no royalties, no transaction volume limits.
+                Once purchased, VAULT is yours forever. No monthly payments, no royalties, no transaction volume limits.
                 Deploy across as many entities and regions as you need.
               </p>
             </div>
@@ -625,7 +649,7 @@ export default function InfraVaultCorePage() {
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Power Your Treasury & Settlement Infrastructure?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
-                Join the financial institutions already using INFRA VAULT CORE to power their real-time liquidity monitoring,
+                Join the financial institutions already using VAULT to power their real-time liquidity monitoring,
                 settlement processing, and multi-entity reconciliation operations.
               </p>
               <p className="text-white/70 mb-8 max-w-xl mx-auto">

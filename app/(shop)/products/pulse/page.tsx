@@ -31,7 +31,7 @@ export default function InfraObservatoryPage() {
   }
 
   const product = {
-    name: 'INFRA OBSERVATORY',
+    name: 'PULSE',
     icon: '📡',
     tagline: 'Monitoring & Analytics. Full Observability Stack.',
     category: 'INFRA Holdings',
@@ -148,6 +148,30 @@ export default function InfraObservatoryPage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -174,9 +198,9 @@ export default function InfraObservatoryPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA OBSERVATORY</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About PULSE</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA OBSERVATORY is a comprehensive observability platform engineered for modern distributed systems. Built on battle-tested open-source foundations including Prometheus, Grafana, ClickHouse, and OpenTelemetry, it delivers unified visibility across logs, metrics, and traces. The platform enables engineering teams to detect anomalies, troubleshoot incidents, and optimize performance across microservices, Kubernetes clusters, and cloud-native infrastructure. With pre-built dashboards, intelligent alerting, and seamless integration with existing DevOps toolchains, INFRA OBSERVATORY transforms raw telemetry data into actionable insights that reduce MTTR and prevent costly outages.
+              PULSE is a comprehensive observability platform engineered for modern distributed systems. Built on battle-tested open-source foundations including Prometheus, Grafana, ClickHouse, and OpenTelemetry, it delivers unified visibility across logs, metrics, and traces. The platform enables engineering teams to detect anomalies, troubleshoot incidents, and optimize performance across microservices, Kubernetes clusters, and cloud-native infrastructure. With pre-built dashboards, intelligent alerting, and seamless integration with existing DevOps toolchains, PULSE transforms raw telemetry data into actionable insights that reduce MTTR and prevent costly outages.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
@@ -190,13 +214,13 @@ export default function InfraObservatoryPage() {
                 Market Opportunity
               </h3>
               <p className="leading-relaxed opacity-95">
-                The observability market is projected to reach €35 billion by 2028, with self-hosted and hybrid solutions capturing an increasing share as organizations seek cost control and data sovereignty. Mid-market companies (500-5000 employees) represent a €8B addressable market segment actively seeking alternatives to expensive per-host SaaS pricing. INFRA OBSERVATORY's one-time license model and unlimited host scaling delivers 60-80% cost savings versus incumbent solutions, positioning it as the premium choice for cost-conscious enterprises.
+                The observability market is projected to reach €35 billion by 2028, with self-hosted and hybrid solutions capturing an increasing share as organizations seek cost control and data sovereignty. Mid-market companies (500-5000 employees) represent a €8B addressable market segment actively seeking alternatives to expensive per-host SaaS pricing. PULSE's one-time license model and unlimited host scaling delivers 60-80% cost savings versus incumbent solutions, positioning it as the premium choice for cost-conscious enterprises.
               </p>
             </div>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              Unlike Datadog's per-host pricing that scales unpredictably with infrastructure growth, INFRA OBSERVATORY offers a fixed-cost ownership model. Compared to New Relic's complex pricing tiers and Splunk's expensive data ingestion fees, our platform provides unlimited log volume and metrics cardinality. The solution combines the power of Prometheus (metrics), Loki (logs), Tempo (traces), and Grafana (visualization) into a unified, pre-configured stack that deploys in hours rather than months. With 28,000+ lines of production-ready Go and TypeScript code, 50+ pre-built dashboards, and comprehensive alerting templates, buyers receive a turnkey observability platform ready for enterprise deployment.
+              Unlike Datadog's per-host pricing that scales unpredictably with infrastructure growth, PULSE offers a fixed-cost ownership model. Compared to New Relic's complex pricing tiers and Splunk's expensive data ingestion fees, our platform provides unlimited log volume and metrics cardinality. The solution combines the power of Prometheus (metrics), Loki (logs), Tempo (traces), and Grafana (visualization) into a unified, pre-configured stack that deploys in hours rather than months. With 28,000+ lines of production-ready Go and TypeScript code, 50+ pre-built dashboards, and comprehensive alerting templates, buyers receive a turnkey observability platform ready for enterprise deployment.
             </p>
           </motion.div>
         </div>
@@ -206,9 +230,9 @@ export default function InfraObservatoryPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA OBSERVATORY?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in PULSE?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA OBSERVATORY represents an exceptional opportunity for investors and organizations seeking to own their observability infrastructure.
+              Discover the key reasons why PULSE represents an exceptional opportunity for investors and organizations seeking to own their observability infrastructure.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -239,7 +263,7 @@ export default function InfraObservatoryPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA OBSERVATORY on operational costs and incident response times.
+              We analyze a real scenario to demonstrate the transformative impact of PULSE on operational costs and incident response times.
             </p>
           </div>
 
@@ -254,7 +278,7 @@ export default function InfraObservatoryPage() {
                   <span className="text-2xl">Before</span> (Datadog + PagerDuty)
                 </h4>
                 <p className="text-red-800 text-sm mb-4">
-                  Typical challenges faced before implementing INFRA OBSERVATORY:
+                  Typical challenges faced before implementing PULSE:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-red-800 flex items-start gap-2">
@@ -278,10 +302,10 @@ export default function InfraObservatoryPage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">After</span> (INFRA OBSERVATORY)
+                  <span className="text-2xl">After</span> (PULSE)
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
-                  Results achieved after deploying INFRA OBSERVATORY:
+                  Results achieved after deploying PULSE:
                 </p>
                 <ul className="space-y-3">
                   <li className="text-green-800 flex items-start gap-2">
@@ -322,9 +346,9 @@ export default function InfraObservatoryPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA OBSERVATORY For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is PULSE For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA OBSERVATORY has been designed for organizations that require enterprise-grade observability without ongoing SaaS costs. If your company fits one of these profiles, INFRA OBSERVATORY may be exactly what you need.
+              PULSE has been designed for organizations that require enterprise-grade observability without ongoing SaaS costs. If your company fits one of these profiles, PULSE may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -361,7 +385,7 @@ export default function InfraObservatoryPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA OBSERVATORY, you receive a complete observability stack ready for deployment, with no hidden costs or vendor lock-in.
+              When you acquire PULSE, you receive a complete observability stack ready for deployment, with no hidden costs or vendor lock-in.
             </p>
           </div>
 
@@ -598,7 +622,7 @@ export default function InfraObservatoryPage() {
               <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Strategic Investment
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Own Enterprise-Grade Observability with INFRA OBSERVATORY?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Own Enterprise-Grade Observability with PULSE?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
                 Join forward-thinking organizations that have eliminated SaaS vendor lock-in and gained complete control over their monitoring infrastructure.
               </p>

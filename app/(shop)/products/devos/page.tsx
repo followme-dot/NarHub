@@ -30,7 +30,7 @@ export default function InfraDevTechPage() {
   }
 
   const product = {
-    name: 'INFRA DEV·TECH',
+    name: 'DEVOS',
     icon: '👨‍💻',
     tagline: 'Developer Platform & API Infrastructure',
     category: 'INFRA Holdings',
@@ -147,6 +147,30 @@ export default function InfraDevTechPage() {
         </div>
       </section>
 
+      {/* Brand Name Disclaimer */}
+      <section className="py-8 bg-red-50 border-y border-red-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white border-2 border-red-300 rounded-2xl p-6 shadow-sm">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                <svg className="w-6 h-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-red-900 mb-2">Product Name Disclaimer</h3>
+                <p className="text-red-800 leading-relaxed text-sm mb-3">
+                  Due to trademark considerations and to avoid potential brand conflicts, this platform has been assigned a representative name for marketplace display purposes. <strong>ffollowme oü</strong> holds complete copyright and intellectual property rights for this platform, which was originally developed for the INFRA group.
+                </p>
+                <p className="text-red-800 leading-relaxed text-sm">
+                  This is a <strong>unique, production-ready platform</strong> with no clones or similar solutions in the market. The platform can be rebranded with any name of your choice upon acquisition, with full legal rights and no trademark restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-12 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -174,14 +198,14 @@ export default function InfraDevTechPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About INFRA DEV·TECH</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-6">About DEVOS</h2>
             <p className="text-lg text-[#4a4a68] leading-relaxed mb-8">
-              INFRA DEV·TECH is a comprehensive developer platform designed to transform how companies build, manage, and monetize their APIs. Built with TypeScript, Go, Python, and OpenAPI at its core, this platform provides everything you need to create a world-class developer ecosystem. From automatic SDK generation that keeps client libraries in sync with your API, to self-service developer portals that reduce support overhead by 80%, INFRA DEV·TECH delivers enterprise-grade infrastructure at a fraction of the typical development cost.
+              DEVOS is a comprehensive developer platform designed to transform how companies build, manage, and monetize their APIs. Built with TypeScript, Go, Python, and OpenAPI at its core, this platform provides everything you need to create a world-class developer ecosystem. From automatic SDK generation that keeps client libraries in sync with your API, to self-service developer portals that reduce support overhead by 80%, DEVOS delivers enterprise-grade infrastructure at a fraction of the typical development cost.
             </p>
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Market Overview</h3>
             <p className="text-[#4a4a68] leading-relaxed mb-8">
-              The API economy is now worth over $14 billion and growing at 25% annually. Developer experience has become the key differentiator for platform companies - Stripe, Twilio, and Plaid all attribute their success to exceptional API experiences. Yet building this infrastructure from scratch typically costs $1.5-2.5M and takes 12-18 months. Companies that delay this investment lose developers to competitors with better tooling. With INFRA DEV·TECH, you can deploy a complete developer platform in 5-8 weeks for just €600K - capturing the market while competitors are still building.
+              The API economy is now worth over $14 billion and growing at 25% annually. Developer experience has become the key differentiator for platform companies - Stripe, Twilio, and Plaid all attribute their success to exceptional API experiences. Yet building this infrastructure from scratch typically costs $1.5-2.5M and takes 12-18 months. Companies that delay this investment lose developers to competitors with better tooling. With DEVOS, you can deploy a complete developer platform in 5-8 weeks for just €600K - capturing the market while competitors are still building.
             </p>
 
             <div className={`bg-gradient-to-r ${product.gradient.from} ${product.gradient.to} rounded-2xl p-8 text-white mb-8`}>
@@ -196,7 +220,7 @@ export default function InfraDevTechPage() {
 
             <h3 className="text-2xl font-bold text-[#1a1a2e] mb-4">Competitive Advantage</h3>
             <p className="text-[#4a4a68] leading-relaxed">
-              INFRA DEV·TECH stands apart with its unified approach to API management. While competitors offer fragmented solutions - separate tools for gateway, documentation, and analytics - INFRA DEV·TECH provides a cohesive platform where everything works together seamlessly. The automatic SDK generation keeps client libraries perpetually in sync with your API, eliminating version mismatches that frustrate developers. The self-service portal reduces developer support tickets by 80%, while the real-time analytics provide visibility into exactly how your APIs are being used, enabling data-driven product decisions.
+              DEVOS stands apart with its unified approach to API management. While competitors offer fragmented solutions - separate tools for gateway, documentation, and analytics - DEVOS provides a cohesive platform where everything works together seamlessly. The automatic SDK generation keeps client libraries perpetually in sync with your API, eliminating version mismatches that frustrate developers. The self-service portal reduces developer support tickets by 80%, while the real-time analytics provide visibility into exactly how your APIs are being used, enabling data-driven product decisions.
             </p>
           </motion.div>
         </div>
@@ -206,16 +230,16 @@ export default function InfraDevTechPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in INFRA DEV·TECH?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Why Invest in DEVOS?</h2>
             <p className="text-lg text-[#4a4a68]">
-              Discover the key reasons why INFRA DEV·TECH represents an exceptional opportunity for companies looking to build best-in-class developer experiences.
+              Discover the key reasons why DEVOS represents an exceptional opportunity for companies looking to build best-in-class developer experiences.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               'API economy worth $14B+ with 25% annual growth',
               'Build from scratch: $1.5-2.5M over 12-18 months',
-              'With INFRA DEV·TECH: €600K in 5-8 weeks',
+              'With DEVOS: €600K in 5-8 weeks',
               'Developer experience is the key differentiator',
               'Reduce support overhead by 80% with self-service',
               'Real-time analytics for data-driven decisions'
@@ -242,7 +266,7 @@ export default function InfraDevTechPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Real Use Case</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              We analyze a real scenario to demonstrate the transformative impact of INFRA DEV·TECH on developer platform operations. This case study illustrates the potential ROI our clients can expect.
+              We analyze a real scenario to demonstrate the transformative impact of DEVOS on developer platform operations. This case study illustrates the potential ROI our clients can expect.
             </p>
           </div>
 
@@ -281,7 +305,7 @@ export default function InfraDevTechPage() {
 
               <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
                 <h4 className="font-bold text-green-700 mb-4 flex items-center gap-2">
-                  <span className="text-2xl">&#9989;</span> After (With INFRA DEV·TECH)
+                  <span className="text-2xl">&#9989;</span> After (With DEVOS)
                 </h4>
                 <p className="text-green-800 text-sm mb-4">
                   Results our clients achieve after implementation:
@@ -325,9 +349,9 @@ export default function InfraDevTechPage() {
       <section className="py-16 bg-[#f8f9fa]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is INFRA DEV·TECH For?</h2>
+            <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">Who is DEVOS For?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              INFRA DEV·TECH has been designed with specific organizations in mind that can maximize the value of this developer platform. If your company fits one of these profiles, INFRA DEV·TECH may be exactly what you need.
+              DEVOS has been designed with specific organizations in mind that can maximize the value of this developer platform. If your company fits one of these profiles, DEVOS may be exactly what you need.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -364,7 +388,7 @@ export default function InfraDevTechPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[#1a1a2e] mb-4">What's Included in Your Purchase?</h2>
             <p className="text-lg text-[#4a4a68] max-w-2xl mx-auto">
-              When you acquire INFRA DEV·TECH, you receive a complete package designed for you to deploy and scale your developer platform immediately, with no hidden costs or third-party dependencies.
+              When you acquire DEVOS, you receive a complete package designed for you to deploy and scale your developer platform immediately, with no hidden costs or third-party dependencies.
             </p>
           </div>
 
@@ -413,7 +437,7 @@ export default function InfraDevTechPage() {
                 <h3 className="text-xl font-bold text-[#1a1a2e]">Perpetual License</h3>
               </div>
               <p className="text-[#4a4a68]">
-                Once purchased, INFRA DEV·TECH is yours forever. No monthly payments, no royalties, no API call limits. Deploy for as many developers and APIs as you need.
+                Once purchased, DEVOS is yours forever. No monthly payments, no royalties, no API call limits. Deploy for as many developers and APIs as you need.
               </p>
             </div>
           </div>
@@ -601,9 +625,9 @@ export default function InfraDevTechPage() {
               <span className="inline-block px-4 py-1.5 bg-white/20 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Strategic Investment
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your Developer Platform with INFRA DEV·TECH?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your Developer Platform with DEVOS?</h2>
               <p className="text-white/90 mb-4 max-w-2xl mx-auto text-lg">
-                Join the companies already using INFRA DEV·TECH to deliver exceptional developer experiences that drive adoption and retention.
+                Join the companies already using DEVOS to deliver exceptional developer experiences that drive adoption and retention.
               </p>
               <p className="text-white/70 mb-8 max-w-xl mx-auto">
                 Valuation: <span className="font-bold text-white">{formatPrice(product.priceMin)}</span>
