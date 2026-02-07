@@ -93,7 +93,7 @@ export const categories = [
     color: "amber"
   },
   {
-    id: "infra-holdings",
+    id: "fintech-core",
     title: "Enterprise FinTech",
     subtitle: "Enterprise Financial Infrastructure",
     description: "Complete enterprise-grade financial technology stack. Banking, payments, custody, compliance, and digital asset infrastructure.",
@@ -104,8 +104,8 @@ export const categories = [
   }
 ]
 
-// Precios ajustados - Total Portfolio: $47,250,000
-// NARDIHA: $27,450,000 | INFRA: $19,800,000
+// Precios ajustados - Total Portfolio: €15.99M
+// NARDIHA: €8.87M | Enterprise FinTech: €7.12M
 export const products = [
   // DeFi & Trading
   {
@@ -605,12 +605,12 @@ export const products = [
       speed: "Minutes for settlement"
     }
   },
-  // INFRA Holdings - Financial Infrastructure
+  // Enterprise FinTech - Financial Infrastructure
   {
     slug: "nexus",
     name: "NEXUS",
     tagline: "Digital Banking Platform. Multi-Currency. PSD2 Ready.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 65000000,
     priceMax: 70000000,
     projectedValue2Years: 200000000,
@@ -637,7 +637,7 @@ export const products = [
     slug: "flux",
     name: "FLUX",
     tagline: "International Payments. Multi-Rail Treasury Management.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 55000000,
     priceMax: 60000000,
     projectedValue2Years: 180000000,
@@ -664,7 +664,7 @@ export const products = [
     slug: "vault",
     name: "VAULT",
     tagline: "Liquidity & Settlement Engine. Real-Time Reconciliation.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 48000000,
     priceMax: 53000000,
     projectedValue2Years: 150000000,
@@ -691,7 +691,7 @@ export const products = [
     slug: "aegis",
     name: "AEGIS",
     tagline: "Institutional Custody. MPC + HSM. Multi-Chain.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 60000000,
     priceMax: 65000000,
     projectedValue2Years: 190000000,
@@ -718,7 +718,7 @@ export const products = [
     slug: "revo",
     name: "REVO",
     tagline: "RWA Tokenization Platform. Compliant Asset Issuance.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 70000000,
     priceMax: 75000000,
     projectedValue2Years: 220000000,
@@ -745,7 +745,7 @@ export const products = [
     slug: "forge",
     name: "FORGE",
     tagline: "AI Smart Contract Platform. Audit-Ready Generation.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 45000000,
     priceMax: 50000000,
     projectedValue2Years: 140000000,
@@ -772,7 +772,7 @@ export const products = [
     slug: "guard",
     name: "GUARD",
     tagline: "InsurTech Platform. Parametric & Traditional.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 55000000,
     priceMax: 60000000,
     projectedValue2Years: 180000000,
@@ -799,7 +799,7 @@ export const products = [
     slug: "learn",
     name: "LEARN",
     tagline: "EdTech Foundation. LMS + Certification.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 32000000,
     priceMax: 37000000,
     projectedValue2Years: 100000000,
@@ -826,7 +826,7 @@ export const products = [
     slug: "devos",
     name: "DEVOS",
     tagline: "Developer Platform & APIs. SDK Generator.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 40000000,
     priceMax: 45000000,
     projectedValue2Years: 130000000,
@@ -853,7 +853,7 @@ export const products = [
     slug: "dolly",
     name: "DOLLY",
     tagline: "Central Command Hub. Unified Dashboard.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 35000000,
     priceMax: 40000000,
     projectedValue2Years: 110000000,
@@ -870,7 +870,7 @@ export const products = [
       "Real-time notifications"
     ],
     specs: {
-      integration: "All INFRA products",
+      integration: "All FinTech products",
       realtime: "WebSocket updates",
       alerts: "Multi-channel notifications",
       sso: "SAML/OIDC support"
@@ -880,7 +880,7 @@ export const products = [
     slug: "keyz",
     name: "KEYZ",
     tagline: "Identity & Access Management. Zero Trust Ready.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 22000000,
     priceMax: 27000000,
     projectedValue2Years: 75000000,
@@ -907,7 +907,7 @@ export const products = [
     slug: "pulse",
     name: "PULSE",
     tagline: "Monitoring & Analytics. Full Observability Stack.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 20000000,
     priceMax: 25000000,
     projectedValue2Years: 70000000,
@@ -934,7 +934,7 @@ export const products = [
     slug: "veric",
     name: "VERIC",
     tagline: "Regulatory Compliance. Multi-Jurisdiction.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 28000000,
     priceMax: 33000000,
     projectedValue2Years: 90000000,
@@ -961,7 +961,7 @@ export const products = [
     slug: "prism",
     name: "PRISM",
     tagline: "Data Warehouse & BI. Real-Time Analytics.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 19000000,
     priceMax: 24000000,
     projectedValue2Years: 68000000,
@@ -988,7 +988,7 @@ export const products = [
     slug: "convo",
     name: "CONVO",
     tagline: "Internal Communications. Team Collaboration.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 18000000,
     priceMax: 23000000,
     projectedValue2Years: 65000000,
@@ -1015,7 +1015,7 @@ export const products = [
     slug: "autom",
     name: "AUTOM",
     tagline: "Workflow Engine. Business Process Automation.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 20000000,
     priceMax: 25000000,
     projectedValue2Years: 70000000,
@@ -1042,7 +1042,7 @@ export const products = [
     slug: "cicdx",
     name: "CICDX",
     tagline: "CI/CD & Infrastructure. GitOps Ready.",
-    category: "INFRA_HOLDINGS",
+    category: "FINTECH_CORE",
     priceMin: 18000000,
     priceMax: 23000000,
     projectedValue2Years: 65000000,
@@ -1136,7 +1136,7 @@ export const bundles = [
     featured: false
   },
   {
-    id: "enterprise-infra",
+    id: "enterprise-tools",
     name: "ENTERPRISE INFRASTRUCTURE",
     description: "Complete internal infrastructure: command center, IAM, monitoring, compliance, data, communications, automation, and DevOps.",
     products: ["dolly", "keyz", "pulse", "veric", "prism", "convo", "autom", "cicdx"],

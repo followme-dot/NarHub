@@ -30,7 +30,7 @@ const navigation = [
       { name: 'Gaming & Metaverse', href: '/products?category=GAMING_METAVERSE' },
       { name: 'Infrastructure & Identity', href: '/products?category=INFRASTRUCTURE_IDENTITY' },
       { name: 'Enterprise & Compliance', href: '/products?category=ENTERPRISE_COMPLIANCE' },
-      { name: 'INFRA Holdings', href: '/products?category=INFRA_HOLDINGS' },
+      { name: 'Enterprise FinTech', href: '/products?category=FINTECH_CORE' },
     ],
   },
   { name: 'About', href: '/about' },

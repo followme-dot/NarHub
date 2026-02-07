@@ -12,7 +12,7 @@ const categories = [
   { id: 'GAMING_METAVERSE', name: 'Gaming & Metaverse', count: 4 },
   { id: 'INFRASTRUCTURE_IDENTITY', name: 'Infrastructure', count: 4 },
   { id: 'ENTERPRISE_COMPLIANCE', name: 'Enterprise', count: 4 },
-  { id: 'INFRA_HOLDINGS', name: 'Enterprise FinTech', count: 17 },
+  { id: 'FINTECH_CORE', name: 'Enterprise FinTech', count: 17 },
 ]
 
 interface ProductGridProps {
