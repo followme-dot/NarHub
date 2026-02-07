@@ -28,6 +28,7 @@ import {
 } from 'lucide-react'
 import DemoCarouselModal from './DemoCarouselModal'
 import { formatPrice } from '@frontend/lib/utils'
+import { platformsWithImages } from '@frontend/lib/platformImages'
 
 interface ProductCardProps {
   slug: string
@@ -133,11 +134,7 @@ export default function ProductCard({
   const config = categoryConfig[category] || categoryConfig.DEFI_TRADING
   const IconComponent = productIcons[slug] || Cpu
 
-  const hasImages = [
-    'argentum-bridge', 'astrid', 'bb-nft', 'bitboots', 'flux', 'forge',
-    'gladius-hub', 'nardium-dex', 'nexus', 'quantum-hedge', 'sseum-games',
-    'susinik', 'templum-dao', 'trade-mad', 'tributum', 'vault', 'veritas-id', 'vigil-ai'
-  ].includes(slug)
+  const hasImages = platformsWithImages.includes(slug)
 
   return (
     <motion.div

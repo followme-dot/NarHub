@@ -16,6 +16,7 @@ import { useAuth } from '@frontend/hooks/useAuth'
 import { formatPriceRange } from '@frontend/lib/utils'
 import { bankDetails, paymentInstructions } from '@frontend/data/bankDetails'
 import DemoCarouselModal from './DemoCarouselModal'
+import { getFirstPlatformImage, platformsWithImages } from '@frontend/lib/platformImages'
 
 interface ProductPageFullProps {
   product: {
@@ -57,12 +58,9 @@ export default function ProductPageFull({ product }: ProductPageFullProps) {
   const [showDemoModal, setShowDemoModal] = useState(false)
   const inCart = isInCart(product.slug)
 
-  // Plataformas que tienen imágenes disponibles
-  const hasImages = [
-    'argentum-bridge', 'astrid', 'bb-nft', 'bitboots', 'flux', 'forge',
-    'gladius-hub', 'nardium-dex', 'nexus', 'quantum-hedge', 'sseum-games',
-    'susinik', 'templum-dao', 'trade-mad', 'tributum', 'vault', 'veritas-id', 'vigil-ai'
-  ].includes(product.slug)
+  // Verificar si la plataforma tiene imágenes disponibles
+  const hasImages = platformsWithImages.includes(product.slug)
+  const firstImageUrl = getFirstPlatformImage(product.slug)
 
   const gradient = {
     from: product.gradientFrom || 'from-blue-600',
@@ -169,7 +167,7 @@ export default function ProductPageFull({ product }: ProductPageFullProps) {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative">
-              {hasImages ? (
+              {hasImages && firstImageUrl ? (
                 <div className="relative aspect-video max-w-2xl mx-auto">
                   {/* Glow effect background */}
                   <div className="absolute inset-0 bg-white/30 rounded-3xl blur-3xl transform scale-95" />
@@ -178,29 +176,12 @@ export default function ProductPageFull({ product }: ProductPageFullProps) {
                   <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 backdrop-blur-sm">
                     <div className="relative w-full aspect-video">
                       <Image
-                        src={`/images/platforms/${product.slug}/01-home-hero.png`}
+                        src={firstImageUrl}
                         alt={`${product.name} preview`}
                         fill
                         className="object-cover"
                         priority
-                        onError={(e) => {
-                          // Fallback a otros posibles nombres de la primera imagen
-                          const fallbacks = [
-                            `/images/platforms/${product.slug}/01-landing-hero.png`,
-                            `/images/platforms/${product.slug}/01-Home-Swap.png`,
-                            `/images/platforms/${product.slug}/01-homepage.png`,
-                            `/images/platforms/${product.slug}/01_Home.png`,
-                            `/images/platforms/${product.slug}/01-home.png`,
-                            `/images/platforms/${product.slug}/01-splash-screen.png`,
-                            `/images/platforms/${product.slug}/01-Landing-Page.png`,
-                          ]
-                          const img = e.target as HTMLImageElement
-                          const currentSrc = img.src
-                          const nextFallback = fallbacks.find(f => !currentSrc.includes(f))
-                          if (nextFallback) {
-                            img.src = nextFallback
-                          }
-                        }}
+                        unoptimized
                       />
                     </div>
 
