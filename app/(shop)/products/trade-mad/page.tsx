@@ -28,16 +28,18 @@ export default function TradeMadPage() {
     icon: '📋',
     tagline: 'Crypto Tax Software',
     category: 'Enterprise',
-    priceMin: 800000,
-    priceMax: 1200000,
+    priceMin: 25000000,
+    priceMax: 30000000,
     projectedValue2Years: 3500000,
     flagship: false,
     gradient: { from: 'from-green-600', to: 'to-emerald-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

@@ -28,16 +28,18 @@ export default function NardiumDexPage() {
     icon: '📊',
     tagline: 'Hybrid DEX with Order Book + AMM',
     category: 'DeFi & Trading',
-    priceMin: 3500000,
-    priceMax: 5000000,
+    priceMin: 65000000,
+    priceMax: 70000000,
     projectedValue2Years: 15000000,
     flagship: true,
     gradient: { from: 'from-blue-600', to: 'to-cyan-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

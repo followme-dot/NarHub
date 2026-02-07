@@ -59,7 +59,7 @@ export const categories = [
     description: "Capture the crypto institutional wave. These platforms power exchanges, hedge funds, and family offices.",
     valueProp: "Own the infrastructure. Launch your crypto business.",
     priceRange: "€230K–€900K",
-    platforms: ["BITBOOTS", "NARDIUM DEX", "ARGENTUM BRIDGE", "AUREUM VAULT", "TRADE MAD", "MANNA PROTOCOL", "VENARI MARKETS"],
+    platforms: ["BITBOOTS", "NARDIUM DEX", "ARGENTUM BRIDGE", "AUREUM VAULT", "TRADE MAD", "CREDITUS PROTOCOL", "VENARI MARKETS"],
     color: "lime"
   },
   {
@@ -450,8 +450,8 @@ export const products = [
     }
   },
   {
-    slug: "manna-protocol",
-    name: "MANNA PROTOCOL",
+    slug: "creditus-protocol",
+    name: "CREDITUS PROTOCOL",
     tagline: "DeFi Yield Aggregator. Auto-Compounding Strategies.",
     category: "DEFI_TRADING",
     priceMin: 23000000,
@@ -1128,7 +1128,7 @@ export const bundles = [
     id: "gaming-metaverse",
     name: "GAMING & METAVERSE",
     description: "Complete Web3 gaming ecosystem with P2E platform, NFT marketplace, game distribution, and DeFi yield.",
-    products: ["sseum-games", "bb-nft", "gladius-hub", "manna-protocol"],
+    products: ["sseum-games", "bb-nft", "gladius-hub", "creditus-protocol"],
     individualPrice: 114000000,
     bundlePrice: 97000000,
     discount: 15,

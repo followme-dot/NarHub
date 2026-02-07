@@ -28,16 +28,18 @@ export default function AureumVaultPage() {
     icon: '🔐',
     tagline: 'Institutional Crypto Custody',
     category: 'Infrastructure',
-    priceMin: 4000000,
-    priceMax: 6000000,
+    priceMin: 70000000,
+    priceMax: 75000000,
     projectedValue2Years: 18000000,
     flagship: true,
     gradient: { from: 'from-amber-500', to: 'to-yellow-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

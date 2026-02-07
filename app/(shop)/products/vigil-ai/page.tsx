@@ -28,16 +28,18 @@ export default function VigilAIPage() {
     icon: '\uD83D\uDEE1\uFE0F',
     tagline: 'AI-Powered Web3 Security',
     category: 'Infrastructure',
-    priceMin: 3000000,
-    priceMax: 5000000,
+    priceMin: 75000000,
+    priceMax: 80000000,
     projectedValue2Years: 15000000,
     flagship: true,
     gradient: { from: 'from-indigo-600', to: 'to-blue-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

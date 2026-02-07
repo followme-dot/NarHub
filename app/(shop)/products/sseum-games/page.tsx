@@ -28,16 +28,18 @@ export default function SseumGamesPage() {
     icon: '🎮',
     tagline: 'Play-to-Earn Gaming Platform',
     category: 'Gaming & Metaverse',
-    priceMin: 1500000,
-    priceMax: 2500000,
+    priceMin: 42000000,
+    priceMax: 47000000,
     projectedValue2Years: 7000000,
     flagship: false,
     gradient: { from: 'from-pink-600', to: 'to-rose-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

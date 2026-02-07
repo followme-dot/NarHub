@@ -28,16 +28,18 @@ export default function OraculumPage() {
     icon: '🔮',
     tagline: 'Decentralized Oracle Network',
     category: 'Infrastructure',
-    priceMin: 2500000,
-    priceMax: 4000000,
+    priceMin: 38000000,
+    priceMax: 43000000,
     projectedValue2Years: 12000000,
     flagship: false,
     gradient: { from: 'from-fuchsia-600', to: 'to-pink-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

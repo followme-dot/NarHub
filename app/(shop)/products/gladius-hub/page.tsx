@@ -28,16 +28,18 @@ export default function GladiusHubPage() {
     icon: '⚔️',
     tagline: 'Web3 Gaming Distribution Platform',
     category: 'Gaming & Metaverse',
-    priceMin: 1000000,
-    priceMax: 1500000,
+    priceMin: 26000000,
+    priceMax: 31000000,
     projectedValue2Years: 4500000,
     flagship: false,
     gradient: { from: 'from-red-600', to: 'to-orange-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

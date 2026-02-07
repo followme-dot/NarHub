@@ -28,15 +28,17 @@ export default function TributumPage() {
     icon: '🧾',
     tagline: 'Global Crypto Tax Platform',
     category: 'Enterprise',
-    priceMin: 10000000,
-    priceMax: 12000000,
+    priceMin: 24000000,
+    priceMax: 29000000,
     flagship: false,
     gradient: { from: 'from-stone-600', to: 'to-neutral-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

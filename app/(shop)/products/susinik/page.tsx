@@ -28,15 +28,17 @@ export default function SusinikPage() {
     icon: '🌱',
     tagline: 'AI-Verified Carbon Credits',
     category: 'Enterprise',
-    priceMin: 15000000,
-    priceMax: 20000000,
+    priceMin: 40000000,
+    priceMax: 45000000,
     flagship: false,
     gradient: { from: 'from-lime-600', to: 'to-green-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

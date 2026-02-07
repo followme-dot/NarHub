@@ -28,16 +28,18 @@ export default function ArgentumBridgePage() {
     icon: '🌉',
     tagline: 'Cross-Chain Bridge Infrastructure',
     category: 'Infrastructure',
-    priceMin: 2500000,
-    priceMax: 3500000,
+    priceMin: 45000000,
+    priceMax: 50000000,
     projectedValue2Years: 10000000,
     flagship: false,
     gradient: { from: 'from-slate-600', to: 'to-zinc-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

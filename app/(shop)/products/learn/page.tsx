@@ -28,14 +28,16 @@ export default function InfraSchoolPage() {
     icon: '🎓',
     tagline: 'Complete LMS Platform. Video Courses. Certification.',
     category: 'INFRA Holdings',
-    priceMin: 500000,
+    priceMin: 32000000,
     flagship: false,
     gradient: { from: 'from-emerald-500', to: 'to-teal-600' }
   }
 
   const formatPrice = (price: number) => {
-    if (price >= 1000000) return `€${(price / 1000000).toFixed(1)}M`
-    return `€${(price / 1000).toFixed(0)}K`
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

@@ -28,16 +28,18 @@ export default function VeritasIDPage() {
     icon: '🪪',
     tagline: 'Decentralized Digital Identity',
     category: 'Infrastructure',
-    priceMin: 2000000,
-    priceMax: 3000000,
+    priceMin: 40000000,
+    priceMax: 45000000,
     projectedValue2Years: 8500000,
     flagship: false,
     gradient: { from: 'from-teal-600', to: 'to-cyan-500' }
   }
 
-  const formatPrice = (price: number) => {
-    if (price >= 1000000) return `$${(price / 1000000).toFixed(0)}M`
-    return `$${(price / 1000).toFixed(0)}K`
+    const formatPrice = (price: number) => {
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (

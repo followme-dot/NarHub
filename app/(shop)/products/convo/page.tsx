@@ -28,16 +28,18 @@ export default function InfraHubPage() {
     icon: '🔗',
     tagline: 'Unified Enterprise Integration Hub',
     category: 'INFRA Holdings',
-    priceMin: 450000,
-    priceMax: 650000,
+    priceMin: 18000000,
+    priceMax: 23000000,
     projectedValue2Years: 1800000,
     flagship: false,
     gradient: { from: 'from-emerald-500', to: 'to-teal-600' }
   }
 
   const formatPrice = (price: number) => {
-    if (price >= 1000000) return `€${(price / 1000000).toFixed(1)}M`
-    return `€${(price / 1000).toFixed(0)}K`
+    const priceInEuros = price / 100
+    if (priceInEuros >= 1000000) return `€${(priceInEuros / 1000000).toFixed(2)}M`
+    if (priceInEuros >= 1000) return `€${(priceInEuros / 1000).toFixed(0)}K`
+    return `€${priceInEuros.toFixed(0)}`
   }
 
   return (
