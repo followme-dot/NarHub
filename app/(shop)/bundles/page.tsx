@@ -7,12 +7,14 @@ import { bundles, megaBundles, products } from '@frontend/data/copy'
 import Button from '@frontend/components/ui/Button'
 
 const formatPrice = (price: number) => {
-  return new Intl.NumberFormat('en-US', {
+  // Convertir de centavos a euros
+  const priceInEuros = price / 100
+  return new Intl.NumberFormat('es-ES', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'EUR',
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-  }).format(price)
+  }).format(priceInEuros)
 }
 
 const bundleColors: Record<string, { from: string; to: string; bg: string; border: string }> = {
