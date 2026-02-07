@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ChevronLeft, ChevronRight, Play } from 'lucide-react'
 import Image from 'next/image'
+import { getAllPlatformImages } from '@frontend/lib/platformImages'
 
 interface DemoCarouselModalProps {
   isOpen: boolean
@@ -28,37 +29,17 @@ export default function DemoCarouselModal({
       const loadImages = async () => {
         try {
           setIsLoading(true)
-          // Intentar cargar hasta 10 imágenes
-          const imagePromises = []
-          for (let i = 1; i <= 10; i++) {
-            const paddedNum = i.toString().padStart(2, '0')
-            imagePromises.push(
-              fetch(`/images/platforms/${productSlug}/${paddedNum}-*.png`)
-                .then(res => res.ok ? `/images/platforms/${productSlug}/${paddedNum}` : null)
-                .catch(() => null)
-            )
+
+          // Obtener todas las imágenes de la plataforma usando el mapeo
+          const platformImages = getAllPlatformImages(productSlug)
+
+          if (platformImages.length > 0) {
+            setImages(platformImages)
+          } else {
+            console.warn(`No images found for platform: ${productSlug}`)
+            setImages([])
           }
 
-          // Cargar todas las imágenes disponibles en la carpeta
-          const availableImages: string[] = []
-
-          // Intentar cargar las imágenes comunes primero
-          const imagePatterns = [
-            '01-home-hero.png', '01-landing-hero.png', '01-Home-Swap.png', '01-homepage.png',
-            '01_Home.png', '01-home.png', '01-splash-screen.png', '01-Landing-Page.png',
-            '02-home-features.png', '02-landing-features.png', '02-Swap-TokenSelector.png',
-            '02-marketplace.png', '02_Browse.png', '02-about.png', '02-login.png', '02-Login-Screen.png',
-            '03-home-how-it-works.png', '03-landing-howitworks.png', '03-Swap-Settings.png',
-            '03-tournaments.png', '03_Marketplace.png', '03-dashboard.png', '03-Dashboard-Overview.png',
-            '04-home-chains.png', '04-landing-pricing.png',
-            '05-home-footer.png', '05-home-products.png'
-          ]
-
-          for (const pattern of imagePatterns) {
-            availableImages.push(`/images/platforms/${productSlug}/${pattern}`)
-          }
-
-          setImages(availableImages.slice(0, 6)) // Máximo 6 imágenes
           setIsLoading(false)
         } catch (error) {
           console.error('Error loading images:', error)
