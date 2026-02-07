@@ -125,7 +125,6 @@ export default function OraculumPage() {
                           fill
                           className="object-cover"
                           priority
-                          unoptimized
                         />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none" />
