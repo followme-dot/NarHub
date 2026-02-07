@@ -21,6 +21,10 @@ export const platformFirstImage: Record<string, string> = {
   'vault': '01-landing-hero.png',
   'veritas-id': '01-home.png',
   'vigil-ai': '01-homepage.png',
+  'aegis': '01_Landing_Page.png',
+  'creditus-protocol': '01-home.png',
+  'devos': '01-home.png',
+  'revo': '01-landing.png',
 }
 
 /**
@@ -189,6 +193,37 @@ export const platformAllImages: Record<string, string[]> = {
     ]
     return names[i]
   }),
+  'aegis': Array.from({ length: 15 }, (_, i) => {
+    const names = [
+      '01_Landing_Page.png', '02_Login.png', '03_Dashboard.png', '04_Portfolio.png',
+      '05_Tokenization.png', '06_Wallets.png', '07_Trading.png', '08_Marketplace.png',
+      '09_Staking.png', '10_Liquidity.png', '11_Governance.png', '12_Compliance.png',
+      '13_Analytics.png', '14_AI_Assistant.png', '15_Settings.png'
+    ]
+    return names[i]
+  }),
+  'creditus-protocol': Array.from({ length: 15 }, (_, i) => {
+    const names = [
+      '01-home.png', '02-how-it-works.png', '03-pricing.png', '04-for-businesses.png',
+      '05-for-investors.png', '06-marketplace.png', '07-login.png', '08-register.png',
+      '09-terms.png', '10-privacy.png', '11-cookies.png', '12-risk.png',
+      '13-aml.png', '14-home-stats.png', '15-home-footer.png'
+    ]
+    return names[i]
+  }),
+  'devos': Array.from({ length: 15 }, (_, i) => {
+    const names = [
+      '01-home.png', '02-product.png', '03-pricing.png', '04-security.png',
+      '05-enterprises.png', '06-documentation.png', '07-about.png', '08-auth-login.png',
+      '09-dev-overview.png', '10-dev-studio.png', '11-dev-ai.png', '12-dev-deploy.png',
+      '13-client-overview.png', '14-client-projects.png', '15-student-overview.png'
+    ]
+    return names[i]
+  }),
+  'revo': [
+    '01-landing.png', '02-about.png', '03-for-investors.png', '04-how-it-works.png',
+    '05-properties.png', '06-funds.png', '07-login.png'
+  ],
 }
 
 /**
