@@ -1,9 +1,17 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import DemoCarouselModal from '@frontend/components/products/DemoCarouselModal'
+import { getFirstPlatformImage, platformsWithImages } from '@frontend/lib/platformImages'
 
 export default function CreditusProtocolPage() {
+  const [showDemoModal, setShowDemoModal] = useState(false)
+  const hasImages = platformsWithImages.includes('creditus-protocol')
+  const firstImageUrl = getFirstPlatformImage('creditus-protocol')
+  const product = { name: 'CREDITUS PROTOCOL' }
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -67,6 +75,15 @@ export default function CreditusProtocolPage() {
           </div>
         </div>
       </section>
+
+      {hasImages && (
+        <DemoCarouselModal
+          isOpen={showDemoModal}
+          onClose={() => setShowDemoModal(false)}
+          productSlug="creditus-protocol"
+          productName={product.name}
+        />
+      )}
     </div>
   )
 }

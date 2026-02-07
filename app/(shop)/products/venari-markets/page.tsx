@@ -68,6 +68,15 @@ export default function VenariMarketsPage() {
           </div>
         </div>
       </section>
+
+      {hasImages && (
+        <DemoCarouselModal
+          isOpen={showDemoModal}
+          onClose={() => setShowDemoModal(false)}
+          productSlug="venari-markets"
+          productName={product.name}
+        />
+      )}
     </div>
   )
 }

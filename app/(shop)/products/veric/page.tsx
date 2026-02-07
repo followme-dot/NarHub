@@ -10,12 +10,18 @@ import {
 import Button from '@frontend/components/ui/Button'
 import { useAuth } from '@frontend/hooks/useAuth'
 import { bankDetails, sepaDetails, swiftDetails } from '@frontend/data/bankDetails'
+import Image from 'next/image'
+import DemoCarouselModal from '@frontend/components/products/DemoCarouselModal'
+import { getFirstPlatformImage, platformsWithImages } from '@frontend/lib/platformImages'
 
 export default function InfraComplianceEnginePage() {
   const { isAuthenticated } = useAuth()
   const [copiedIban, setCopiedIban] = useState(false)
   const [showPayment, setShowPayment] = useState(false)
   const [isOutsideEU, setIsOutsideEU] = useState(false)
+  const [showDemoModal, setShowDemoModal] = useState(false)
+  const hasImages = platformsWithImages.includes('veric')
+  const firstImageUrl = getFirstPlatformImage('veric')
 
   const copyIban = () => {
     navigator.clipboard.writeText(bankDetails.iban.replace(/\s/g, ''))
@@ -94,22 +100,46 @@ export default function InfraComplianceEnginePage() {
                     </Button>
                   </Link>
                 )}
-                <Link href="/demo">
-                  <Button size="lg" variant="outline" className="border-white/50 text-white hover:bg-white/10">
+                {hasImages && (
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white/50 text-white hover:bg-white/10"
+                    onClick={() => setShowDemoModal(true)}
+                  >
                     <Play className="w-5 h-5 mr-2" /> Request Demo
                   </Button>
-                </Link>
+                )}
               </div>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative">
-              <div className="relative aspect-square max-w-lg mx-auto">
-                <div className="absolute inset-0 bg-white/20 rounded-3xl blur-2xl transform scale-90" />
-                <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-12 flex items-center justify-center">
-                  <span className="text-[10rem] md:text-[12rem] filter drop-shadow-2xl">{product.icon}</span>
-                </div>
-              </div>
-            </motion.div>
+                {hasImages && firstImageUrl ? (
+                  <div className="relative aspect-video max-w-2xl mx-auto">
+                    <div className="absolute inset-0 bg-white/30 rounded-3xl blur-3xl transform scale-95" />
+                    <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 backdrop-blur-sm">
+                      <div className="relative w-full aspect-video">
+                        <Image
+                          src={firstImageUrl}
+                          alt={`${product.name} preview`}
+                          fill
+                          className="object-cover"
+                          priority
+                          unoptimized
+                        />
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none" />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="relative aspect-square max-w-lg mx-auto">
+                    <div className="absolute inset-0 bg-white/20 rounded-3xl blur-2xl transform scale-90" />
+                    <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-12 flex items-center justify-center">
+                      <span className="text-[10rem] md:text-[12rem] filter drop-shadow-2xl">{product.icon}</span>
+                    </div>
+                  </div>
+                )}
+              </motion.div>
           </div>
         </div>
 
@@ -614,6 +644,15 @@ export default function InfraComplianceEnginePage() {
           </div>
         </div>
       </section>
+
+      {hasImages && (
+        <DemoCarouselModal
+          isOpen={showDemoModal}
+          onClose={() => setShowDemoModal(false)}
+          productSlug="veric"
+          productName={product.name}
+        />
+      )}
     </div>
   )
 }
