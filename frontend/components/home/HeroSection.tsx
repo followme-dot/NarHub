@@ -7,7 +7,7 @@ import { ArrowRight, Play, Shield, Zap, Award, CheckCircle2 } from 'lucide-react
 const trustBadges = [
   { icon: Shield, text: 'Triple Audited', description: 'Security verified' },
   { icon: Award, text: 'SOC 2 Certified', description: 'Enterprise ready' },
-  { icon: Zap, text: '$2B+ Volume', description: 'Battle tested' },
+  { icon: Zap, text: '€1.6B+ Volume', description: 'Battle tested' },
 ]
 
 const stats = [
