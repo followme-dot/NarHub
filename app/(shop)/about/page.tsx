@@ -28,7 +28,7 @@ const values = [
 
 const stats = [
   { value: '36', label: 'Enterprise Platforms' },
-  { value: '$47.25M', label: 'Portfolio Value' },
+  { value: '€15.99M', label: 'Portfolio Value' },
   { value: '750K+', label: 'Lines of Code' },
   { value: '5-8', label: 'Weeks to Deploy' },
 ]
@@ -316,7 +316,7 @@ export default function AboutPage() {
               { icon: Shield, label: 'SOC 2 Type II', description: 'Certified' },
               { icon: Award, label: 'GDPR', description: 'Compliant' },
               { icon: Globe, label: 'ISO 27001', description: 'Certified' },
-              { icon: Shield, label: '$250M', description: 'Insured' },
+              { icon: Shield, label: '€200M', description: 'Insured' },
             ].map((cert, index) => (
               <motion.div
                 key={cert.label}

@@ -7,8 +7,8 @@ import { Download, Mail, ExternalLink, Calendar, FileText, Image as ImageIcon } 
 const pressReleases = [
   {
     date: '2026-01-15',
-    title: 'Narhub Announces $375M Enterprise Software Portfolio',
-    excerpt: 'ffollowme oü launches Narhub marketplace with 19 production-ready enterprise platforms.',
+    title: 'Narhub Announces €15.99M Enterprise Software Portfolio',
+    excerpt: 'ffollowme oü launches Narhub marketplace with 36 production-ready enterprise platforms.',
   },
   {
     date: '2025-11-20',
@@ -52,10 +52,10 @@ const mediaAssets = [
 const companyFacts = [
   { label: 'Founded', value: '2020' },
   { label: 'Headquarters', value: 'Tallinn, Estonia' },
-  { label: 'Platforms', value: '19 Enterprise Solutions' },
-  { label: 'Portfolio Value', value: '$375M+' },
-  { label: 'Lines of Code', value: '400,000+' },
-  { label: 'Deployment Time', value: '7-8 Weeks' },
+  { label: 'Platforms', value: '36 Enterprise Solutions' },
+  { label: 'Portfolio Value', value: '€15.99M' },
+  { label: 'Lines of Code', value: '750K+' },
+  { label: 'Deployment Time', value: '5-8 Weeks' },
 ]
 
 export default function PressPage() {
@@ -161,12 +161,12 @@ export default function PressPage() {
               <p className="text-[#4a4a68] leading-relaxed mb-4">
                 <strong>Narhub</strong> is the commercial brand of <strong>ffollowme oü</strong>,
                 an Estonian technology company specializing in enterprise software development and acquisition.
-                Founded in 2020, Narhub operates a marketplace of 19 production-ready enterprise platforms
+                Founded in 2020, Narhub operates a marketplace of 36 production-ready enterprise platforms
                 spanning DeFi, gaming, infrastructure, and enterprise compliance sectors.
               </p>
               <p className="text-[#4a4a68] leading-relaxed mb-4">
-                With over 400,000 lines of audited code and a total portfolio valuation exceeding $375 million,
-                Narhub enables businesses to deploy sophisticated software solutions in 7-8 weeks rather than
+                With over 750,000 lines of audited code and a total portfolio valuation of €15.99 million,
+                Narhub enables businesses to deploy sophisticated software solutions in 5-8 weeks rather than
                 the typical 2-3 years of development. Each platform comes with full source code, documentation,
                 and deployment support.
               </p>
