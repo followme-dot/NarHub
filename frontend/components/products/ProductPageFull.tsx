@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   ArrowLeft, ShoppingCart, Play, Shield, Code2, Zap, CheckCircle2, Star,
   Download, Clock, Users, Globe, Lock, Cpu, Database, Cloud, Layers,
@@ -14,6 +15,7 @@ import { useCart } from '@frontend/hooks/useCart'
 import { useAuth } from '@frontend/hooks/useAuth'
 import { formatPriceRange } from '@frontend/lib/utils'
 import { bankDetails, paymentInstructions } from '@frontend/data/bankDetails'
+import DemoCarouselModal from './DemoCarouselModal'
 
 interface ProductPageFullProps {
   product: {
@@ -52,7 +54,15 @@ export default function ProductPageFull({ product }: ProductPageFullProps) {
   const [activeTab, setActiveTab] = useState<'features' | 'tech' | 'specs' | 'deliverables'>('features')
   const [copiedIban, setCopiedIban] = useState(false)
   const [showPayment, setShowPayment] = useState(false)
+  const [showDemoModal, setShowDemoModal] = useState(false)
   const inCart = isInCart(product.slug)
+
+  // Plataformas que tienen imágenes disponibles
+  const hasImages = [
+    'argentum-bridge', 'astrid', 'bb-nft', 'bitboots', 'flux', 'forge',
+    'gladius-hub', 'nardium-dex', 'nexus', 'quantum-hedge', 'sseum-games',
+    'susinik', 'templum-dao', 'trade-mad', 'tributum', 'vault', 'veritas-id', 'vigil-ai'
+  ].includes(product.slug)
 
   const gradient = {
     from: product.gradientFrom || 'from-blue-600',
@@ -145,19 +155,67 @@ export default function ProductPageFull({ product }: ProductPageFullProps) {
                     </Button>
                   </Link>
                 )}
-                <Button size="lg" variant="outline" className="border-white/50 text-white hover:bg-white/10">
-                  <Play className="w-5 h-5 mr-2" /> Solicitar Demo
-                </Button>
+                {hasImages && (
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white/50 text-white hover:bg-white/10"
+                    onClick={() => setShowDemoModal(true)}
+                  >
+                    <Play className="w-5 h-5 mr-2" /> Solicitar Demo
+                  </Button>
+                )}
               </div>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative">
-              <div className="relative aspect-square max-w-lg mx-auto">
-                <div className="absolute inset-0 bg-white/20 rounded-3xl blur-2xl transform scale-90" />
-                <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-12 flex items-center justify-center">
-                  <span className="text-[10rem] md:text-[12rem] filter drop-shadow-2xl">{product.icon}</span>
+              {hasImages ? (
+                <div className="relative aspect-video max-w-2xl mx-auto">
+                  {/* Glow effect background */}
+                  <div className="absolute inset-0 bg-white/30 rounded-3xl blur-3xl transform scale-95" />
+
+                  {/* Card container with image */}
+                  <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 backdrop-blur-sm">
+                    <div className="relative w-full aspect-video">
+                      <Image
+                        src={`/images/platforms/${product.slug}/01-home-hero.png`}
+                        alt={`${product.name} preview`}
+                        fill
+                        className="object-cover"
+                        priority
+                        onError={(e) => {
+                          // Fallback a otros posibles nombres de la primera imagen
+                          const fallbacks = [
+                            `/images/platforms/${product.slug}/01-landing-hero.png`,
+                            `/images/platforms/${product.slug}/01-Home-Swap.png`,
+                            `/images/platforms/${product.slug}/01-homepage.png`,
+                            `/images/platforms/${product.slug}/01_Home.png`,
+                            `/images/platforms/${product.slug}/01-home.png`,
+                            `/images/platforms/${product.slug}/01-splash-screen.png`,
+                            `/images/platforms/${product.slug}/01-Landing-Page.png`,
+                          ]
+                          const img = e.target as HTMLImageElement
+                          const currentSrc = img.src
+                          const nextFallback = fallbacks.find(f => !currentSrc.includes(f))
+                          if (nextFallback) {
+                            img.src = nextFallback
+                          }
+                        }}
+                      />
+                    </div>
+
+                    {/* Optional gradient overlay for better integration */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent pointer-events-none" />
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="relative aspect-square max-w-lg mx-auto">
+                  <div className="absolute inset-0 bg-white/20 rounded-3xl blur-2xl transform scale-90" />
+                  <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 p-12 flex items-center justify-center">
+                    <span className="text-[10rem] md:text-[12rem] filter drop-shadow-2xl">{product.icon}</span>
+                  </div>
+                </div>
+              )}
             </motion.div>
           </div>
         </div>
@@ -633,6 +691,16 @@ export default function ProductPageFull({ product }: ProductPageFullProps) {
           </div>
         </div>
       </section>
+
+      {/* Demo Modal */}
+      {hasImages && (
+        <DemoCarouselModal
+          isOpen={showDemoModal}
+          onClose={() => setShowDemoModal(false)}
+          productSlug={product.slug}
+          productName={product.name}
+        />
+      )}
     </div>
   )
 }
