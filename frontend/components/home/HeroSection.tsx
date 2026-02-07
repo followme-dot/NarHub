@@ -13,7 +13,7 @@ const trustBadges = [
 const stats = [
   { value: '36', label: 'Enterprise Platforms' },
   { value: '750K+', label: 'Lines of Code' },
-  { value: '$47.25M', label: 'Portfolio Value' },
+  { value: '€15.99M', label: 'Portfolio Value' },
   { value: '5-8', label: 'Weeks to Deploy' },
 ]
 
@@ -76,7 +76,7 @@ export default function HeroSection() {
             className="mt-8 text-xl md:text-2xl text-[#4a4a68] max-w-3xl mx-auto leading-relaxed"
           >
             Production-ready platforms generating{' '}
-            <span className="text-[#1a1a2e] font-semibold">$40M ARR Year 1</span>.
+            <span className="text-[#1a1a2e] font-semibold">€40M ARR Year 1</span>.
             <br className="hidden md:block" />
             750K+ lines of production code. Zero technical debt.
           </motion.p>
