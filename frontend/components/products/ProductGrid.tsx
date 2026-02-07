@@ -7,11 +7,12 @@ import { products } from '@frontend/data/copy'
 import { Grid3X3, LayoutGrid } from 'lucide-react'
 
 const categories = [
-  { id: 'all', name: 'All Platforms', count: 19 },
-  { id: 'DEFI_TRADING', name: 'DeFi & Trading', count: 5 },
+  { id: 'all', name: 'All Platforms', count: 36 },
+  { id: 'DEFI_TRADING', name: 'DeFi & Trading', count: 7 },
   { id: 'GAMING_METAVERSE', name: 'Gaming & Metaverse', count: 4 },
-  { id: 'INFRASTRUCTURE_IDENTITY', name: 'Infrastructure', count: 5 },
-  { id: 'ENTERPRISE_COMPLIANCE', name: 'Enterprise', count: 5 },
+  { id: 'INFRASTRUCTURE_IDENTITY', name: 'Infrastructure', count: 4 },
+  { id: 'ENTERPRISE_COMPLIANCE', name: 'Enterprise', count: 4 },
+  { id: 'INFRA_HOLDINGS', name: 'Enterprise FinTech', count: 17 },
 ]
 
 interface ProductGridProps {
